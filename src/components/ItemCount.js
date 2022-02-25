@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 
-export const ItemCount = ({ stock, initial }) => {
-    const [count, setCount] = useState(Number(initial));
+export const ItemCount = ({ stock, initial, toAdd }) => {
     const [currentInput, setCurrentInput] = useState(Number(initial));
     return <>
         <div>
@@ -10,7 +9,7 @@ export const ItemCount = ({ stock, initial }) => {
             <button disabled={currentInput >= stock} onClick={() => setCurrentInput(currentInput + 1)}>+</button>
         </div>
         <div>
-            <button disabled={!stock || currentInput > stock} onClick={() => setCount(currentInput)} >Agregar al carrito</button>
+            <button disabled={!stock || currentInput > stock} onClick={() => toAdd(currentInput)} >Agregar al carrito</button>
         </div>
     </>
 }
