@@ -1,0 +1,1 @@
+export const item = {stock: 5, price: 2320, name: 'item example'}
