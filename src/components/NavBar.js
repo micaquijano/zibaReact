@@ -1,6 +1,7 @@
 import logo from '../logo.svg';
 import './NavBar.css';
 
+import { CartWidget } from './CartWidget';
 function NavBar() {
     return (
         <div className="navbar">
@@ -10,7 +11,7 @@ function NavBar() {
             <ul className="navbar_menu">
                 <li>inicio</li>
                 <li>productos</li>
-                <li>carrito</li>
+                <li><CartWidget CantProd={5}/></li>
             </ul>
         </div>
     );
