@@ -1,9 +1,12 @@
 const Header = () => {
   return (
-    <header>
+    <header id="layout-header">
         <h1>Mi E commerce</h1>
         <nav>
-            <button>link</button>
+            <button>link1</button>
+            <button>link2</button>
+            <button>link3</button>
+            
         </nav>
     </header>
   )
