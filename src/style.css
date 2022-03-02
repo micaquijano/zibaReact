@@ -1,0 +1,14 @@
+html , body #root {
+height: 100%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0,5rem 1rem;
+    background-color: aquamarine;
+}
+header nav button{
+    margin-left: 1rem;
+}
