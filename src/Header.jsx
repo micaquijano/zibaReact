@@ -1,7 +1,10 @@
 const Header = () => {
   return (
     <header id="layout-header">
-        <h1>Mi E commerce</h1>
+        <h1 >Mi E commerce</h1>
+        <span className="material-icons">
+          shopping_cart
+        </span>
         <nav>
             <button>link1</button>
             <button>link2</button>

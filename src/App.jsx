@@ -8,7 +8,7 @@ return (
     <>
     <Header />
     <Footer />
-    <Main/>
+    <Main nombre="Micaela" edad="26"/>
     <Style/>
     
     </>
