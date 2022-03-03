@@ -1,4 +1,4 @@
-function Footer() {
+export function Footer() {
     return (
       <footer>
           <p>&copy; copyrigth 2022 - Micaela Quijano</p>
@@ -8,4 +8,4 @@ function Footer() {
     )
   }
   
-  export default Footer
+  
