@@ -10,7 +10,7 @@ const Header = () => {
               <button>link2</button>
               <button>link3</button>
               
-          </nav>
+          </nav> 
       </header>
     )
   }
