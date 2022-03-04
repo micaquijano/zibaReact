@@ -1,6 +1,7 @@
 import Footer from "./Footer"
 import NavBar from "./NavBar"
 import { Main } from "./Main"
+import ItemCount from "./ItemCount"
 
 const App = () => {
     return (
@@ -8,6 +9,7 @@ const App = () => {
             <Footer />
             <NavBar />
             <Main />
+            <ItemCount />
         </>
     )
 }
