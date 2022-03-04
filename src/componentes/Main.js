@@ -1,9 +1,14 @@
 import { useState } from 'react'
 
 export const Main = ({ asd }) => {
-    let [estado, setEstado] = useState(0)
+    const inicial = 5
+    const stock = 10
+    let [estado, setEstado] = useState(inicial)
     const handlesAdd = () => {
-        setEstado(estado + 1)
+        if
+            (estado < stock) {
+            setEstado(estado + 1)
+        }
     }
     const handleSub = () => {
         setEstado(estado - 1)

@@ -1,6 +1,6 @@
-const Header = () => {
+const NarBar = () => {
     return (
-      <header id="layout-header">
+      <NarBar id="layout-NarBar">
           <h1 >Mi E commerce</h1>
           <span className="material-icons">
             shopping_cart
@@ -9,11 +9,11 @@ const Header = () => {
               <button>link1</button>
               <button>link2</button>
               <button>link3</button>
-              
           </nav> 
-      </header>
+      </NarBar>
+
     )
   }
-  export default Header
+  export default NarBar
   
   
