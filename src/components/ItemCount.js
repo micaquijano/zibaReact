@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export const ItemCount = ({ stock, initial, toAdd }) => {
     const [currentInput, setCurrentInput] = useState(Number(initial));
