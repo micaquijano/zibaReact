@@ -1,14 +1,13 @@
-import { Footer } from "./Footer"
+import Footer from "./Footer"
 import Header from "./Header"
 import { Main } from "./Main"
-
 
 const App = () => {
 return (
     <>
     <Header />
+    <Main />
     <Footer />
-    <Main asd="1"/>
     </>
 )
 }

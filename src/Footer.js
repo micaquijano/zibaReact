@@ -1,4 +1,4 @@
-export function Footer() {
+ function Footer() {
     return (
       <footer>
           <p>&copy; copyrigth 2022 - Micaela Quijano</p>
@@ -7,5 +7,5 @@ export function Footer() {
       </footer>
     )
   }
-  
+  export default Footer
   
