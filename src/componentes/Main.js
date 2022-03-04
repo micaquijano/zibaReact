@@ -1,9 +1,9 @@
 import { useState } from 'react'
 
 export const Main = ({ asd }) => {
-    const inicial = 5
+    const initial = 5
     const stock = 10
-    let [estado, setEstado] = useState(inicial)
+    let [estado, setEstado] = useState(initial)
     const handlesAdd = () => {
         if
             (estado < stock) {
