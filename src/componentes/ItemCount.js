@@ -1,4 +1,4 @@
-export function ItemCount() {
+function ItemCount() {
     return (
         <>
         <p>text</p>
@@ -10,4 +10,4 @@ export function ItemCount() {
         </>
     )
   }
-  
+  export default ItemCount

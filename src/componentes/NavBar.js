@@ -3,8 +3,8 @@ const NarBar = () => {
       <NarBar id="layout-NarBar">
           <h1 >Mi E commerce</h1>
           <span className="material-icons">
-            shopping_cart
-          </span>
+                shopping_cart
+            </span>
           <nav>
               <button>link1</button>
               <button>link2</button>
