@@ -1,11 +1,11 @@
-import Contador from "./Contador"
+import { ItemCount } from "./ItemCount"
 
 export const Main = () => {
 
     return (
         <>
             <h2>bienvenidos</h2>
-            <Contador />
+            <ItemCount />
         </>
     )
 }

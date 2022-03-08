@@ -1,13 +1,27 @@
-function ItemCount() {
+import { useState } from 'react'
+export const ItemCount = () => {
+    const initial = 5
+    const stock = 10
+    const [estado, setEstado] = useState(initial)
+    const handlesAdd = () => {
+        if
+            (estado < stock) {
+            setEstado(estado + 1)
+        }
+    }
+    const handleSub = () => {
+        setEstado(estado - 1)
+    }
+
     return (
         <>
-        <p>text</p>
-        <nav>
-              <button>link1</button>
-              <button>link2</button>
-              <button>link3</button>
-          </nav>
+            <div>
+                <p>Mi contador va: {estado}</p>
+                <br />
+                <button onClick={handlesAdd}>suma</button>
+                <br />
+                <button onClick={handleSub}>resta</button>
+            </div>
         </>
     )
-  }
-  export default ItemCount
+}

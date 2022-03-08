@@ -1,18 +1,14 @@
-import Footer from "./Footer"
-import NavBar from "./NavBar"
+import { Footer } from "./Footer"
 import { Main } from "./Main"
-import ItemCount from "./ItemCount"
-import Contador from "./Contador"
+import { NavBar } from "./NavBar/NavBar"
 
 
 const App = () => {
     return (
         <>
-            <Footer />
             <NavBar />
             <Main />
-            <ItemCount />
-            <Contador />
+            <Footer />
         </>
     )
 }
