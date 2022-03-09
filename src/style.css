@@ -3,6 +3,7 @@ height: 100%;
 }
 
 #layout-header{
+    font-family: unset;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -11,6 +12,13 @@ height: 100%;
 }
 #layout-header nav button{
     margin-left: 1rem;
+}
+#button-count{
+    color: aqua;
+    align-content: space-between;
+}
+#h2{
+    font-size: large;
 }
 footer{
     padding: 0,5rem 1rem;

@@ -11,16 +11,17 @@ export const ItemCount = () => {
     }
     const handleSub = () => {
         setEstado(estado - 1)
+        
     }
 
     return (
         <>
             <div>
                 <p>Mi contador va: {estado}</p>
-                <br />
+                <div className='button-count'>
                 <button onClick={handlesAdd}>suma</button>
-                <br />
                 <button onClick={handleSub}>resta</button>
+            </div>
             </div>
         </>
     )
