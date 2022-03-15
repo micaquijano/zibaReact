@@ -45,8 +45,8 @@ export const Main = () => {
     console.log(productos)
     return (
         <>
-            <h2 className="h2">bienvenidos</h2>
-            <button onClick={()=> setLoading(loading)}>enviar</button>
+            <h2 id="h2">bienvenidos</h2>
+            <button className="first_button" onClick={()=> setLoading(loading)}>enviar</button>
             <ul>
                 {productos.map((producto) => {
                     return <li>{producto.nombre}</li>

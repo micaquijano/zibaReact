@@ -16,9 +16,9 @@ export const ItemCount = () => {
 
     return (
         <>
-            <div>
-                <p>Mi contador va: {estado}</p>
-                <div className='button-count'>
+            <div className='button-count'>
+                <p id='p'>Mi contador va: {estado}</p>
+                <div>
                 <button onClick={handlesAdd}>suma</button>
                 <button onClick={handleSub}>resta</button>
             </div>
