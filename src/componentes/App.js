@@ -3,6 +3,8 @@ import { Main } from "./Main"
 import { NavBar } from "./NavBar/NavBar"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
+
 const App = () => {
     return (
         <>

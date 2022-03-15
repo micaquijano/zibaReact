@@ -23,15 +23,36 @@ export const Main = () => {
     const  [productos, setProductos] = useState([])
     useEffect(()=> {
         console.log("ejecutando use effect")
-        setTimeout(()=>{
-            setProductos(productosIniciales)
-        },5000)
+        
+        const pedido = new Promise ((res,rej) =>{
+            setTimeout(()=>{
+                res(productosIniciales)
+            },2000)
+
+        })
+        pedido
+        .then((resultado) =>{
+            console.log("se ejecuto correctamente")
+            console.log(resultado)
+        })
+        .catch((error) => {
+            console.log("se ejecuto incorrectamente")
+        })
+        //setProductos(productosIniciales)
+
+        
     })
     console.log(productos)
     return (
         <>
             <h2 className="h2">bienvenidos</h2>
             <button onClick={()=> setLoading(loading)}>enviar</button>
+            <ul>
+                {productos.map((producto) => {
+                    return <li>{producto.nombre}</li>
+                })}
+
+            </ul>
             <ItemCount stock={5} initial={1}/>
         </>
     )

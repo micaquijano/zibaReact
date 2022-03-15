@@ -1,5 +1,6 @@
 html , body #root {
 height: 100%;
+
 }
 
 #layout-header{
@@ -9,6 +10,7 @@ height: 100%;
     justify-content: space-between;
     padding: 0,5rem 1rem;
     background-color: aquamarine;
+    
 }
 #layout-header nav button{
     margin-left: 1rem;
@@ -20,12 +22,14 @@ height: 100%;
 #h2{
     font-size: large;
 }
-footer{
-    padding: 0,5rem 1rem;
+
+#page_footer{
+    padding: 1rem;
     background-color: aquamarine;
     text-align: center;
-
+    position: relative;
 }
+
 main{
     flex-grow: 1;
 }
