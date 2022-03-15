@@ -1,4 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 export const Item = () => {
   return (
     <div class="card" style="width: 18rem;">
