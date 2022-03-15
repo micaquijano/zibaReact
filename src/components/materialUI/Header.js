@@ -18,11 +18,12 @@ import ReactAudioPlayer from "react-audio-player";
 import russia from "../../assets/russia.png";
 import imno from "../../assets/imno.mp3";
 import { Currencies } from "../Currencies";
+import { CartWidget } from "../CartWidget";
 
 const pages = ["продукты", "категории", "Контакт"];
 const settings = ["профиль", "Счет", "Выйти"];
 
-export const Header = () => {
+export const Header = ({ itemsCount }) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const [muted, setMuted] = React.useState(false);
@@ -44,7 +45,10 @@ export const Header = () => {
 
   return (
     <>
-      <AppBar position="static">
+      <AppBar
+        position="static"
+        style={{ backgroundColor: "rgb(221, 219, 219, 0.85)" }}
+      >
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Typography
@@ -121,14 +125,15 @@ export const Header = () => {
               muted={muted}
               style={{ display: "none" }}
             />
-            <IconButton onClick={() => setMuted((prev) => !prev)} sx={{ p: 0 }}>
+            <IconButton onClick={() => setMuted((prev) => !prev)} sx={{ p: 2 }}>
               {muted ? <VolumeUpIcon /> : <VolumeOffIcon />}
             </IconButton>
             <Currencies />
+            <CartWidget itemsCount={itemsCount} />
 
-            <Box sx={{ flexGrow: 0 }}>
+            {/*             <Box sx={{ flexGrow: 0 }}>
               <Tooltip title="Open settings">
-                <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                <IconButton onClick={handleOpenUserMenu} sx={{ p: 2 }}>
                   <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
                 </IconButton>
               </Tooltip>
@@ -158,6 +163,39 @@ export const Header = () => {
                 </IconButton>
               </Menu>
             </Box>
+
+            <Box sx={{ flexGrow: 0 }}>
+              <Tooltip title="Open settings">
+                <IconButton onClick={handleOpenUserMenu} sx={{ p: 2 }}>
+                  <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                </IconButton>
+              </Tooltip>
+              <Menu
+                sx={{ mt: "45px" }}
+                id="menu-appbar"
+                anchorEl={anchorElUser}
+                anchorOrigin={{
+                  vertical: "top",
+                  horizontal: "right",
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: "top",
+                  horizontal: "right",
+                }}
+                open={Boolean(anchorElUser)}
+                onClose={handleCloseUserMenu}
+              >
+                {settings.map((setting) => (
+                  <MenuItem key={setting} onClick={handleCloseUserMenu}>
+                    <Typography textAlign="center">{setting}</Typography>
+                  </MenuItem>
+                ))}
+                <IconButton aria-label="cart">
+                  <ShoppingCartIcon />
+                </IconButton>
+              </Menu>
+            </Box> */}
           </Toolbar>
         </Container>
       </AppBar>

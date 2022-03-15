@@ -1,6 +1,9 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
-
+import Badge from '@mui/material/Badge';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 export const CartWidget = ({ itemsCount }) => {
-    return <> <FontAwesomeIcon icon={faCartShopping} /> {itemsCount}</>;
-}
+  return (
+    <Badge color="secondary" badgeContent={itemsCount}>
+      <ShoppingCartIcon />
+    </Badge>
+  );
+};

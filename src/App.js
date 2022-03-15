@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       {/* <NavBar itemsCount={count} /> */}
-      <Header/>
+      <Header itemsCount={count}/>
       <Container style={{ minHeight: "500px" }}>
       <ItemListContainer itemsCount={count} toAdd={toAdd} />
       </Container>

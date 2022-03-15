@@ -27,6 +27,7 @@ export const Currencies = () => {
           label={`$${c.price}`}
           alt={`$${c.price}`}
           tooltip={`$${c.price}`}
+          sx={{m:1}}
         />
       ))}
     </>
