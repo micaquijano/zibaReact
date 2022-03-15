@@ -1,8 +1,14 @@
 import { Item } from "./Item"
 
-export const ItemList = () => {
+export const ItemList = ({productos}) => {
+    
   return (
-    <Item/>
+    <ul>
+                {productos.map((producto) => {
+                    return <Item key={producto.id} producto={producto}/>
+                })}
+
+            </ul>
   )
 }
 
