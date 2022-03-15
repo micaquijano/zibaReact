@@ -27,7 +27,7 @@ export const Footer = () => (
       >
         <Grid container spacing={2} justify="space-between">
           <Grid item xs={6}>
-            в ходе выполнения
+            <Typography variant="h6">в ходе выполнения</Typography>
             <List>
               <ListItem disablePadding>
                 <ListItemButton>
@@ -48,7 +48,7 @@ export const Footer = () => (
             </List>
           </Grid>
           <Grid item xs={6}>
-            вскоре
+            <Typography variant="h6">вскоре</Typography>
             <List>
               <ListItem disablePadding>
                 <ListItemButton>
@@ -78,7 +78,7 @@ export const Footer = () => (
       style={{ backgroundColor: "#D52B1E" }}
     >
       <Toolbar style={{ justifyContent: "center" }}>
-        <Typography variant="caption">Valakax © 2022</Typography>
+        <Typography variant="h6">Valakax © 2022</Typography>
       </Toolbar>
     </AppBar>
   </div>
