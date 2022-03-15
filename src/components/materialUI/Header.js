@@ -3,6 +3,8 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
+import VolumeOffIcon from "@mui/icons-material/VolumeOff";
+import VolumeUpIcon from "@mui/icons-material/VolumeUp";
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -11,10 +13,11 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import ReactAudioPlayer from "react-audio-player";
 import russia from "../../assets/russia.png";
 import imno from "../../assets/imno.mp3";
+import { Currencies } from "../Currencies";
 
 const pages = ["продукты", "категории", "Контакт"];
 const settings = ["профиль", "Счет", "Выйти"];
@@ -22,6 +25,7 @@ const settings = ["профиль", "Счет", "Выйти"];
 export const Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const [muted, setMuted] = React.useState(false);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -51,9 +55,9 @@ export const Header = () => {
             >
               <img width={50} src={russia} />
             </Typography>
-            <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-              <ReactAudioPlayer src={imno} autoPlay loop controls />
-            </Box>
+            <Box
+              sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
+            ></Box>
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
               <IconButton
                 size="large"
@@ -110,6 +114,18 @@ export const Header = () => {
               ))}
             </Box>
 
+            <ReactAudioPlayer
+              src={imno}
+              autoPlay
+              controls
+              muted={muted}
+              style={{ display: "none" }}
+            />
+            <IconButton onClick={() => setMuted((prev) => !prev)} sx={{ p: 0 }}>
+              {muted ? <VolumeUpIcon /> : <VolumeOffIcon />}
+            </IconButton>
+            <Currencies />
+
             <Box sx={{ flexGrow: 0 }}>
               <Tooltip title="Open settings">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
@@ -137,6 +153,9 @@ export const Header = () => {
                     <Typography textAlign="center">{setting}</Typography>
                   </MenuItem>
                 ))}
+                <IconButton aria-label="cart">
+                  <ShoppingCartIcon />
+                </IconButton>
               </Menu>
             </Box>
           </Toolbar>
