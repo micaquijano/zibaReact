@@ -19,13 +19,16 @@ import { CartWidget } from "../CartWidget";
 const pages = ["продукты", "категории", "Контакт"];
 const settings = ["профиль", "Счет", "Выйти"];
 
-export const Header = ({ itemsCount }) => {
+export const Header = ({ itemsCount, sound }) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [audio] = React.useState(new Audio(himno));
   const [playing, setPlaying] = React.useState(false);
-  const vol = React.useRef(null);
 
   const toggle = () => setPlaying(!playing);
+
+  React.useEffect(() => {
+    setPlaying(sound);
+  }, [sound]);
 
   React.useEffect(() => {
     playing ? audio.play() : audio.pause();
@@ -121,9 +124,7 @@ export const Header = ({ itemsCount }) => {
               ))}
             </Box>
 
-            <audio src={himno} autoPlay />
-
-            <IconButton ref={vol} onClick={toggle} sx={{ p: 2 }}>
+            <IconButton onClick={toggle} sx={{ p: 2 }}>
               {playing ? <VolumeUpIcon /> : <VolumeOffIcon />}
             </IconButton>
             <Currencies />
