@@ -1,3 +1,4 @@
+import { Card } from "react-bootstrap"
 export const Item = () => {
   return (
     <div class="card" style="width: 18rem;">

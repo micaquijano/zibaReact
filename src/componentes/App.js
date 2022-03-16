@@ -4,12 +4,11 @@ import { NavBar } from "./NavBar/NavBar"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-
 const App = () => {
     return (
         <>
             <NavBar />
-            <Main name="roberto" />
+            <Main />
             <Footer />
         </>
     )

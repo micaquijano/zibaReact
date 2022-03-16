@@ -1,5 +1,6 @@
 import { ItemList } from "./ItemList"
 import { useEffect, useState } from "react"
+import { Button } from "bootstrap"
 
 let productosIniciales = [
     {
@@ -44,8 +45,12 @@ export const ItemListContainer = () => {
     })
     console.log(productos)
   return (
-      
+      <>
+     
     <ItemList productos={productos}/>
+    </>
+    //<button onClick={() => setLoading(!loading)} >enviar</button>
   )
 }
+
 
