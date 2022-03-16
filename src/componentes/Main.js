@@ -1,4 +1,3 @@
-import { ItemCount } from "./ItemCount"
 import { ItemListContainer } from "./ItemListContainer"
 
 export const Main = () => {

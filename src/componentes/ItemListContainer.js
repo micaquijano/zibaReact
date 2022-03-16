@@ -1,7 +1,5 @@
 import { ItemList } from "./ItemList"
 import { useEffect, useState } from "react"
-import { Button } from "bootstrap"
-
 let productosIniciales = [
     {
         id: 1,

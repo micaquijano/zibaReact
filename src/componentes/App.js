@@ -2,6 +2,7 @@ import { Footer } from "./Footer"
 import { Main } from "./Main"
 import { NavBar } from "./NavBar/NavBar"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Item } from "./Item";
 
 
 const App = () => {
@@ -9,6 +10,7 @@ const App = () => {
         <>
             <NavBar />
             <Main />
+            <Item/>
             <Footer />
         </>
     )
