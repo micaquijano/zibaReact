@@ -124,7 +124,7 @@ export const Header = ({ itemsCount, sound }) => {
               ))}
             </Box>
 
-            <IconButton onClick={toggle} sx={{ p: 2 }}>
+            <IconButton onClick={toggle} sx={{ p: 2, color: '#fff' }}>
               {playing ? <VolumeUpIcon /> : <VolumeOffIcon />}
             </IconButton>
             <Currencies />

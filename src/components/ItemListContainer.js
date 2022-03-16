@@ -7,17 +7,20 @@ export const ItemListContainer = ({ count, toAdd }) => {
   const [spinner, setSpinner] = useState(true);
 
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/photos?albumId=1")
+    /* fetch("https://jsonplaceholder.typicode.com/photos?albumId=1") */
+    fetch("https://rickandmortyapi.com/api/character/?page=1")
       .then((response) => response.json())
       .then((data) => {
-        setItems(data);
+        setItems(data.results);
         setTimeout(() => setSpinner(false), 2000);
       });
   }, []);
 
   return (
     <>
-      <h1 style={{textAlign: 'left', textTransform: 'uppercase'}}>Каталог товаров</h1>
+      <h1 style={{ textAlign: "left", textTransform: "uppercase" }}>
+        Каталог товаров
+      </h1>
       {spinner ? (
         <CircularProgress />
       ) : (

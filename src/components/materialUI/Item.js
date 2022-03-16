@@ -16,18 +16,15 @@ export const Item = ({ features, toAdd }) => {
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
-        alt={features.title}
+        alt={features.name}
         height="140"
-        image={features.url}
+        image={features.image}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          {features.title}
+          {features.name}
         </Typography>
       </CardContent>
-      <CardActions>
-        <ItemCount stock={features.id} initial="1" toAdd={toAdd} />
-      </CardActions>
       <CardActions>
         <IconButton aria-label="Favoritos">
           <FavoriteIcon />
@@ -35,6 +32,7 @@ export const Item = ({ features, toAdd }) => {
         <IconButton aria-label="Compartir">
           <ShareIcon />
         </IconButton>
+        <ItemCount stock={features.id} initial="1" toAdd={toAdd} />
       </CardActions>
     </Card>
   );
