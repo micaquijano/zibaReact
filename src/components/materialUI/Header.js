@@ -53,7 +53,7 @@ export const Header = ({ itemsCount, sound }) => {
     <>
       <AppBar
         position="static"
-        style={{ backgroundColor: "rgb(221, 219, 219, 0.85)" }}
+        style={{ backgroundColor: "#0039A6" }}
       >
         <Container maxWidth="xl">
           <Toolbar disableGutters>

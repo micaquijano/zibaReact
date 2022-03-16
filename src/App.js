@@ -25,7 +25,7 @@ function App() {
           color: "#fff",
           zIndex: (theme) => theme.zIndex.drawer + 1,
         }}
-        transitionDuration={{appear: 0, enter: 0, exit: 3000}}
+        transitionDuration={{ appear: 0, enter: 0, exit: 3000 }}
         open={open}
       >
         <video
@@ -45,7 +45,7 @@ function App() {
           }}
         />
       </Backdrop>
-
+      <video className="video-parallax" autoPlay muted loop src={flag} />
       <div className="App">
         <Header itemsCount={count} sound={!open} />
         <Container style={{ minHeight: "500px" }}>

@@ -18,7 +18,7 @@ import StarBorder from "@mui/icons-material/StarBorder";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 
 export const Footer = () => (
-  <div style={{ backgroundColor: "rgba(255,255,255,0.05)", marginTop: 50 }}>
+  <div style={{ backgroundColor: "rgba(255, 0, 0, 0.856)", marginTop: 50 }}>
     <Container>
       <Grid
         container
