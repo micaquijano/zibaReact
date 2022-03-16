@@ -1,14 +1,18 @@
-import { Card } from "react-bootstrap"
+import { Card, Card.Img, Card.Body, Card.Title, Card.Link } from "react-bootstrap"
 export const Item = () => {
   return (
-    <div class="card" style="width: 18rem;">
-        <img src="../imagenes/conjuntos" class="card-img-top" alt="..."></img>
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+    <Card style={{ width: '18rem' }}>
+  <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+  <Card.Body>
+    <Card.Title>Card Title</Card.Title>
+    <Card.Text>
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </Card.Text>
+    <Card.Link href="#">Card Link</Card.Link>
+    <Card.Link href="#">Another Link</Card.Link>
+  </Card.Body>
+</Card>
   )
 }
 
