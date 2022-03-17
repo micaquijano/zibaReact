@@ -1,6 +1,7 @@
 html , body #root {
 height: 100%;
 width: 100%;
+background-color: black;
 }
 
 #layout-header{
@@ -9,7 +10,7 @@ width: 100%;
     align-items: center;
     justify-content: space-around;
     padding: 0,5rem 1rem;
-    background-color: aquamarine;
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
     
 }
 #layout-header nav button{
@@ -31,15 +32,19 @@ width: 100%;
 #h2{
     font-family: 'Courier New', Courier, monospace;
     margin: 1rem;
+    color: palevioletred;
 }
 
 #page_footer{
     padding: 1rem;
-    background-color: aquamarine;
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
     text-align: center;
     position: relative;
 }
 
 main{
     flex-grow: 1;
+}
+.card {
+    background-color: rgb(228, 187, 228);
 }
