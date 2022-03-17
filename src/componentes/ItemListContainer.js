@@ -1,5 +1,7 @@
 import { ItemList } from "./ItemList"
 import { useEffect, useState } from "react"
+import { toast } from "react-toastify"
+
 let productosIniciales = [
     {
         id: 1,
@@ -21,7 +23,8 @@ export const ItemListContainer = () => {
     const [loading, setLoading]= useState(true)
     const  [productos, setProductos] = useState([])
     useEffect(()=> {
-        console.log("ejecutando use effect")
+
+        toast.info("cargando productos...")
         
         const pedido = new Promise ((res,rej) =>{
             setTimeout(()=>{
@@ -31,24 +34,27 @@ export const ItemListContainer = () => {
         })
         pedido
         .then((resultado) =>{
-            console.log("se ejecuto correctamente")
-            console.log(resultado)
+            toast.dismiss()
+            setProductos(resultado)
+
         })
         .catch((error) => {
-            console.log("se ejecuto incorrectamente")
+            toast.error("error al cargar productos")
         })
-        //setProductos(productosIniciales)
+        .finally(() =>{
+            setLoading(false)
+        })
 
         
     })
-    console.log(productos)
-  return (
-      <>
-     
-    <ItemList productos={productos}/>
-    </>
-    //<button onClick={() => setLoading(!loading)} >enviar</button>
-  )
-}
+    if(loading){
+        return <h2>cargando...</h2>
+    }
+    else{
+        return <ItemList productos={productos}/>
+        
+    }
+    }
+  
 
 

@@ -47,4 +47,6 @@ main{
 }
 .card {
     background-color: rgb(228, 187, 228);
+    font-family: 'Courier New', Courier, monospace;
+    
 }
