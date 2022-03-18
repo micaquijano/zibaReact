@@ -1,4 +1,6 @@
 import { ItemListContainer } from "./ItemListContainer"
+import ItemDetailcontainer from "./ItemDetailcontainer"
+import { Route } from "react-router-dom"
 
 export const Main = () => {
     
@@ -6,6 +8,7 @@ export const Main = () => {
         <>
         <h2 id="h2">Nuestros Productos</h2>
             <ItemListContainer/>
+            
         </>
     )
 }

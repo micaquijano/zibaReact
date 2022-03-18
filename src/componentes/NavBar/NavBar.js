@@ -11,7 +11,7 @@ export const NavBar = () => {
           shopping_cart
         </span>
         </Link>
-        <div className='menu'>
+        <div>
           <Link to='cat1' className='menu-Link'>cat1</Link>
           <Link to='cat2' className='menu-Link'>cat2</Link>
           <Link to='cat3' className='menu-Link'>cat3</Link>

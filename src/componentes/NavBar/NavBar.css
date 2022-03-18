@@ -1,3 +1,10 @@
 .header-bg{
     background-color: aquamarine;
 }
+.menu-Link{
+    color: black;
+    padding: 1rem;
+}
+.menu-Link:hover {
+    color: palevioletred;  
+}
