@@ -1,6 +1,7 @@
 import { ItemList } from "./ItemList";
 import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 let productosIniciales = [
   {
