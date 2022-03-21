@@ -1,59 +1,69 @@
-html , body #root {
-height: 100%;
-width: 100%;
-background-color: black;
+@import "react-toastify/dist/ReactToastify.css";
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+html,
+body #root {
+  height: 100%;
+  width: 100%;
+  background-color: black;
 }
 
-#layout-header{
-    font-family: unset;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0,5rem 1rem;
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
-    
+#layout-header {
+  font-family: unset;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0, 5rem 1rem;
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
 }
-#layout-header nav button{
-    margin-left: 1rem;
-    margin: 1rem;
-}
-
-.button-count{
-    align-content: space-between;
-    margin: 1rem;
-}
-.first_button{
-    margin: 1rem;
-}
-#p{
-    margin: 1rem; 
+#layout-header nav button {
+  margin-left: 1rem;
+  margin: 1rem;
 }
 
-.menu-btn{
-justify-content: flex-end;
+.button-count {
+  align-content: space-between;
+  margin: 1rem;
+}
+.first_button {
+  margin: 1rem;
+}
+#p {
+  margin: 1rem;
 }
 
-#h2{
-    font-family: 'Courier New', Courier, monospace;
-    margin: 1rem;
-    color: palevioletred;
+.menu-btn {
+  justify-content: flex-end;
 }
 
-#page_footer{
-    padding: 1rem;
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
-    text-align: center;
-    position: relative;
+#h2 {
+  font-family: "Courier New", Courier, monospace;
+  margin: 1rem;
+  color: palevioletred;
 }
 
-main{
-    flex-grow: 1;
+#page_footer {
+  padding: 1rem;
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+  text-align: center;
+  position: relative;
+}
+
+main {
+  flex-grow: 1;
 }
 .card {
-    background-color: rgb(228, 187, 228);
-    font-family: 'Courier New', Courier, monospace;
-    
+  background-color: rgb(228, 187, 228);
+  font-family: "Courier New", Courier, monospace;
 }
-.material-icons{
-    color: black;
+.material-icons {
+  color: black;
 }

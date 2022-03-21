@@ -1,4 +1,4 @@
-import { Card, Button, Row } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
 export const Item = ({ producto }) => {
   console.log(producto);
   return (
@@ -6,7 +6,7 @@ export const Item = ({ producto }) => {
       <Card.Img
         className="img"
         variant="top"
-        src="https://www.dhresource.com/0x0/f2/albu/g9/M00/AB/AB/rBVaWF6ZeUOACvfmAAE3pWJ3kGM967.jpg/tights-fashion-female-clothing-cartoon-cat.jpg"
+        src={producto.imgUrl}
       />
       <Card.Body>
         <Card.Title>
