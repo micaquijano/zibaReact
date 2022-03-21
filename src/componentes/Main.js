@@ -1,14 +1,13 @@
-import { ItemListContainer } from "./ItemListContainer"
-import ItemDetailcontainer from "./ItemDetailcontainer"
-import { Route } from "react-router-dom"
+import { Container } from "react-bootstrap";
+import { ItemListContainer } from "./ItemListContainer";
 
 export const Main = () => {
-    
-    return (
-        <>
-        <h2 id="h2">Nuestros Productos</h2>
-            <ItemListContainer/>
-            
-        </>
-    )
-}
+  return (
+    <>
+    <Container>
+      <h2 id="h2">Nuestros Productos</h2>
+      <ItemListContainer />
+    </Container>
+    </>
+  );
+};
