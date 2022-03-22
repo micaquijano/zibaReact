@@ -5,18 +5,18 @@ import { toast } from "react-toastify";
 let productosIniciales = [
   {
     id: 1,
-    nombre: "Producto 1",
-    precio: 100,
+    nombre: "Sailor Moon",
+    precio: 1200,
   },
   {
     id: 2,
-    nombre: "Producto 2",
-    precio: 200,
+    nombre: "Rick and Morty",
+    precio: 700,
   },
   {
     id: 3,
-    nombre: "Producto 3",
-    precio: 300,
+    nombre: "the simpsons",
+    precio: 700,
   },
 ];
 export const ItemListContainer = () => {

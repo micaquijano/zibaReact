@@ -1,13 +1,11 @@
-import { Item } from "./Item"
+import { Item } from "./Item";
 
-export const ItemList = ({productos}) => {
-    
+export const ItemList = ({ productos }) => {
   return (
-    <ul>
-                {productos.map((productos) => {
-                    return <Item key={productos.id} productos={productos}/>
-                })}
-
-            </ul>
-  )
-}
+    <section>
+      {productos.map((producto) => {
+        return <Item key={producto.id} producto={producto} />;
+      })}
+    </section>
+  );
+};
