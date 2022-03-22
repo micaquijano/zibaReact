@@ -6,25 +6,25 @@ import Spinner from "react-bootstrap/Spinner";
 let productosIniciales = [
   {
     id: 1,
-    nombre: "Producto 1",
-    precio: 100,
+    nombre: "Sailor Moon",
+    precio: 1200,
     imgUrl:
       "https://www.dhresource.com/0x0/f2/albu/g9/M00/AB/AB/rBVaWF6ZeUOACvfmAAE3pWJ3kGM967.jpg/tights-fashion-female-clothing-cartoon-cat.jpg",
   },
   {
     id: 2,
-    nombre: "Producto 2",
-    precio: 200,
+    nombre: "Rick and Morty",
+    precio: 800,
     imgUrl:
-    "https://www.dhresource.com/0x0/f2/albu/g9/M00/AB/AB/rBVaWF6ZeUOACvfmAAE3pWJ3kGM967.jpg/tights-fashion-female-clothing-cartoon-cat.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg4o6Wwe5hkictTdCCKwVkvEDliLzXa8BMWA&usqp=CAU",
 
   },
   {
     id: 3,
-    nombre: "Producto 3",
-    precio: 300,
+    nombre: "Attack on Tita",
+    precio: 700,
     imgUrl:
-    "https://www.dhresource.com/0x0/f2/albu/g9/M00/AB/AB/rBVaWF6ZeUOACvfmAAE3pWJ3kGM967.jpg/tights-fashion-female-clothing-cartoon-cat.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ10YEFem3v8GD2HA2GWMtjfsk-iTZIVALzOQ&usqp=CAU",
 
   },
 ];

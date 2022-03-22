@@ -13,13 +13,13 @@ export const NavBar = () => {
           <span className="material-icons">shopping_cart</span>
         </Link>
         <div>
-          <Link to="cat1" className="menu-Link">
+          <Link to="/categoria/1" className="menu-Link">
             cat1
           </Link>
-          <Link to="cat2" className="menu-Link">
+          <Link to="/categoria/2" className="menu-Link">
             cat2
           </Link>
-          <Link to="cat3" className="menu-Link">
+          <Link to="/categoria/3" className="menu-Link">
             cat3
           </Link>
         </div>
