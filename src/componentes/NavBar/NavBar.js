@@ -9,7 +9,7 @@ export const NavBar = () => {
         <Link to="./">
           <h1>Mi e commerce</h1>
         </Link>
-        <Link to="./carrito">
+        <Link to="./carrito.js">
           <span className="material-icons">shopping_cart</span>
         </Link>
         <div>

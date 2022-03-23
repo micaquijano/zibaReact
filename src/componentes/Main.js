@@ -1,7 +1,7 @@
 import { Container } from "react-bootstrap";
 import { Route, Routes } from "react-router-dom";
 import { ItemListContainer } from "./ItemListContainer";
-import Carrito from "./carrito";
+import Carrito from "./carrito.js";
 
 export const Main = () => {
   return (
