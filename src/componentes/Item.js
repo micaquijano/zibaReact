@@ -15,7 +15,9 @@ export const Item = ({ producto }) => {
         </Card.Title>
         <Card.Text>{producto.nombre}</Card.Text>
         <Button variant="outline-dark">Comprar</Button>
-        <Link to={"./producto/${producto.id}"}>ver detalle</Link>
+        <div>
+        <Link className="detail" to={`/producto/${producto.id}`}>ver detalle</Link>
+        </div>
       </Card.Body>
     </Card>
   );
