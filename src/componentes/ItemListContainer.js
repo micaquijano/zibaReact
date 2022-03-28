@@ -2,6 +2,7 @@ import { ItemList } from "./ItemList";
 import { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import Spinner from "react-bootstrap/Spinner";
+import { useParams } from "react-router-dom";
 
 let productosIniciales = [
   {
@@ -32,6 +33,8 @@ export const ItemListContainer = () => {
   const [loading, setLoading] = useState(true);
   const [productos, setProductos] = useState([]);
 
+  const {idCategoria} = useParams()
+
   useEffect(() => {
     if (loading) {
       toast.warning("cargando productos...");
@@ -52,7 +55,7 @@ export const ItemListContainer = () => {
           setLoading(false);
         });
     }
-  }, [loading]);
+  }, [loading, idCategoria]);
   return (
     <>
       <ToastContainer />

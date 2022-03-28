@@ -11,9 +11,9 @@ export const Main = () => {
       <ItemListContainer />
       <Routes>
         <Route path="/" element={<ItemListContainer/>}/>
-        <Route path="/categoria/id" element={<ItemListContainer/>}/>
-        <Route path="/producto/id" element={<ItemListContainer/>}/>
-        <Route path="/carrito" element={<Carrito/>}/>
+        <Route path="/categoria/idCategoria" element={<ItemListContainer/>}/>
+        <Route path="/producto/idProducto" element={<ItemListContainer/>}/>
+        <Route path="/carrito.js" element={<Carrito/>}/>
       </Routes>
     </Container>
     </>
