@@ -1,6 +1,7 @@
 import { Row } from "react-bootstrap";
 import { Item } from "./Item";
 
+
 export const ItemList = ({ productos }) => {
   console.log(productos);
   return (
@@ -8,6 +9,6 @@ export const ItemList = ({ productos }) => {
         {productos.map((producto) => {
           return <Item key={producto.id} producto={producto} />;
         })}
-    </Row>
+    </Row> 
   );
 };
