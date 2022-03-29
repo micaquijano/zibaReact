@@ -1,7 +1,7 @@
-const carrito = () => {
+export const Carrito = () => {
   return (
     <div>carrito</div>
   )
 }
 
-export default carrito
+ 
