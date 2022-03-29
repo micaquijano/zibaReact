@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
 import { toast } from "react-toastify";
-import { Itemdeatail } from "./Itemdeatail";
+import { ItemDetail } from "./ItemDetail";
 
 export const ItemDetailContainer = () => {
   const [ Item, setItem] = useState();
@@ -13,8 +13,8 @@ export const ItemDetailContainer = () => {
     fetch(`https://fakestoreapi.com/products/${idProducto}`)
     .then((response)=>{
       return response.json()
-  }, [loading])
-  .then((respuesta)=>{
+  })
+  .then((respuesta)=>{ 
     setItem(respuesta)
   })
   .catch(()=>{
@@ -23,9 +23,9 @@ export const ItemDetailContainer = () => {
   .finally(()=>{
     setLoading(false)
   })
-  })
+  }, [loading])
   return (
-    <Itemdeatail Item={Item}/>
+    <ItemDetail Item={Item}/>
   )
 }
 

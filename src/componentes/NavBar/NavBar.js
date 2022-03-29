@@ -7,7 +7,7 @@ export const NavBar = () => {
     <>
       <div id="layout-header" className="header-bg">
         <Link to="./">
-          <h1>Mi e commerce</h1>
+          <h1>Tienda Online</h1>
         </Link>
         <Link to="./carrito">
           <span className="material-icons">shopping_cart</span>
