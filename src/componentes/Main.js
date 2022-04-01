@@ -7,14 +7,22 @@ import { ItemListContainer } from "./ItemListContainer";
 export const Main = () => {
   return (
     <>
-    <Container>
-      <Routes>
-        <Route exact path="/" element={<ItemListContainer/>}/>
-        <Route exact path="/categoria/:idCategoria" element={<ItemListContainer/>}/>
-        <Route exact path="/producto/:idProducto" element={<ItemDetailContainer/>}/>
-        <Route exact path="/carrito" element={<Carrito/>}/>
-      </Routes>
-    </Container>
+      <Container>
+        <Routes>
+          <Route exact path="/" element={<ItemListContainer />} />
+          <Route
+            exact
+            path="/categoria/:idCategoria"
+            element={<ItemListContainer />}
+          />
+          <Route
+            exact
+            path="/producto/:idProducto"
+            element={<ItemDetailContainer />}
+          />
+          <Route exact path="/carrito" element={<Carrito />} />
+        </Routes>
+      </Container>
     </>
   );
 };

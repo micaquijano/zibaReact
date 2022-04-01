@@ -5,9 +5,11 @@ import "./NavBar.css";
 export const NavBar = () => {
   return (
     <>
+    
       <div id="layout-header" className="header-bg">
         <Link to="./">
           <h1>Tienda Online</h1>
+          <img src="..." class="img-fluid" alt="..."></img>
         </Link>
         <Link to="./carrito">
           <span className="material-icons">shopping_cart</span>

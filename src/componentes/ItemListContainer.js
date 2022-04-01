@@ -17,23 +17,21 @@ let productosIniciales = [
     nombre: "Rick and Morty",
     precio: 800,
     imgUrl:
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg4o6Wwe5hkictTdCCKwVkvEDliLzXa8BMWA&usqp=CAU",
-
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg4o6Wwe5hkictTdCCKwVkvEDliLzXa8BMWA&usqp=CAU",
   },
   {
     id: 3,
     nombre: "Attack on Tita",
     precio: 700,
     imgUrl:
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ10YEFem3v8GD2HA2GWMtjfsk-iTZIVALzOQ&usqp=CAU",
-
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ10YEFem3v8GD2HA2GWMtjfsk-iTZIVALzOQ&usqp=CAU",
   },
 ];
 export const ItemListContainer = () => {
   const [loading, setLoading] = useState(true);
   const [productos, setProductos] = useState([]);
 
-  const {idCategoria} = useParams()
+  const { idCategoria } = useParams();
 
   useEffect(() => {
     if (loading) {
