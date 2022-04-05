@@ -4,7 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 import Spinner from "react-bootstrap/Spinner";
 import { useParams } from "react-router-dom";
 
-let productosIniciales = [
+export const productosIniciales = [
   {
     id: 1,
     nombre: "Sailor Moon",

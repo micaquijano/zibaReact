@@ -9,7 +9,6 @@ export const NavBar = () => {
       <div id="layout-header" className="header-bg">
         <Link to="./">
           <h1>Tienda Online</h1>
-          <img src="..." class="img-fluid" alt="..."></img>
         </Link>
         <Link to="./carrito">
           <span className="material-icons">shopping_cart</span>
@@ -19,7 +18,7 @@ export const NavBar = () => {
           <Link to="/categoria/2" className="menu-Link">cat2</Link>
           <Link to="/categoria/3" className="menu-Link">cat3</Link>
         </div>
-      </div>
+      </div> 
     </>
   );
 };

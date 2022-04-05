@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 export const Item = ({ producto }) => {
   return (
+
     <Card className="card">
       <Card.Img className="img" variant="top" src={producto.imgUrl} />
       <Card.Body>
@@ -11,11 +12,9 @@ export const Item = ({ producto }) => {
         </Card.Title>
         <Card.Text>{producto.nombre}</Card.Text>
         <Button variant="outline-dark">Comprar</Button>
-        <div>
-          <Link className="detail" to={`/producto/${producto.id}`}>
-            ver detalle
+          <Link className="bi bi-eye-fill" to={`/producto/${producto.id}`}>
+            ver
           </Link>
-        </div>
       </Card.Body>
     </Card>
   );

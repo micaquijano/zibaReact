@@ -4,24 +4,26 @@ import "rc-rate/assets/index.css";
 import { Link } from "react-router-dom";
 import { Contador } from "./Contador";
 
-export const ItemDetail = ({ Item }) => {
+export const ItemDetail = ({ item }) => {
   const onAdd = (cantidadSeleccionada) => {
     console.log('Añadir al carrito', cantidadSeleccionada)
   }
+  console.log(item)
     
   return (
     <Card style={{ width: "18rem" }}>
-      <Card.Img className="img" variant="top" src=""/>
+      <Card.Img className="img" variant="top" src={item.imgUrl}/>
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>Sailor Moon</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        Medias Bucaneras Con Lineas Y Anime Sailor Moon
         </Card.Text>
-        <Button variant="primary">Comprar</Button>
-        <Rate count={5} value={Item} />
+        <Button variant="outline-dark">Comprar</Button>
         <div>
-          <Link className="menu-Link" to="/carrito">carrito</Link>
+        <Rate count={5} value={item} />
+        </div>
+        <div>
+          <Link variant="bi bi-cart-check-fill" to="/carrito">carrito</Link>
           <Contador stock={5} initial={1} onAdd={onAdd} />
         </div>
       </Card.Body>

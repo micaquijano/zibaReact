@@ -1,60 +1,39 @@
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
-import { toast } from "react-toastify";
 import { ItemDetail } from "./ItemDetail";
-
-let productosIniciales = [
-  {
-    id: 1,
-    nombre: "Sailor Moon",
-    precio: 1200,
-    imgUrl:
-      "https://www.dhresource.com/0x0/f2/albu/g9/M00/AB/AB/rBVaWF6ZeUOACvfmAAE3pWJ3kGM967.jpg/tights-fashion-female-clothing-cartoon-cat.jpg",
-  },
-  {
-    id: 2,
-    nombre: "Rick and Morty",
-    precio: 800,
-    imgUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg4o6Wwe5hkictTdCCKwVkvEDliLzXa8BMWA&usqp=CAU",
-  },
-  {
-    id: 3,
-    nombre: "Attack on Tita",
-    precio: 700,
-    imgUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ10YEFem3v8GD2HA2GWMtjfsk-iTZIVALzOQ&usqp=CAU",
-  },
-];
+import { productosIniciales } from "./ItemListContainer";
 
 export const ItemDetailContainer = () => {
-  const [Item] = useState();
-  const [loading, setLoading] = useState(true);
-  const [productos, setProductos] = useState([]);
-  console.log(productos);
-  const { idCategoria } = useParams();
+  const [item, setItem] = useState();
+  const { idProducto } = useParams();
+console.log(idProducto)
 
-  useEffect(() => {
-    if (loading) {
-      toast.warning("cargando productos...");
-      const pedido = new Promise((res, rej) => {
+
+useEffect(() => {
+    console.log("hi")
+   
+  });
+
+  /* useEffect(() => {
+      const pedido = new Promise((res) => {
         setTimeout(() => {
           res(productosIniciales);
         }, 2000);
       });
+      console.log(pedido)
       pedido
         .then((resultado) => {
-          toast.dismiss();
-          setProductos(resultado);
+          const producto = resultado.find(p=>p.id===idProducto)
+          console.log(11,producto)
+          if (producto!==undefined)
+          setItem(producto);
         })
         .catch((error) => {
           toast.error("error al cargar productos");
         })
-        .finally(() => {
-          setLoading(false);
-        });
+        
     }
-  }, [loading, idCategoria]);
-  return <ItemDetail Item={Item} />;
+  ); */
+  return <ItemDetail item={item} />;
 };

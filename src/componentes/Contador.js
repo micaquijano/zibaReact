@@ -29,6 +29,7 @@ export const Contador = ({initial, stock,onAdd}) => {
             <button onClick={handleAgregar}>confirmar cantidad seleccionada</button>
             <button onClick={handleSumar}>sumar</button>
             <button onClick={handleRestar}>restar</button>
+            
         </div>
     )
 }
