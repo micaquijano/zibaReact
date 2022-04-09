@@ -5,8 +5,8 @@ export const Footer = () => {
     <>
       <footer id="page_footer"> 
       
-        <p>&copy; copyrigth 2022 - Micaela Quijano</p>
-        <p> todos los derechos reservados</p>
+        <p className="text-Footer">&copy; copyrigth 2022 - Valkyrya Productos. Todos los derechos reservados. </p>
+        
       </footer>
     </>
   );

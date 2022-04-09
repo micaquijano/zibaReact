@@ -5,11 +5,13 @@ import { BrowserRouter } from "react-router-dom";
 
 const App = () => {
   return (
+
     <BrowserRouter>
       <NavBar />
       <Main />
       <Footer />
     </BrowserRouter>
+    
   );
 }; 
 export default App;

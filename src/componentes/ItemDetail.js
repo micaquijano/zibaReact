@@ -23,7 +23,7 @@ export const ItemDetail = ({ item }) => {
         <Rate count={5} value={item} />
         </div>
         <div>
-          <Link variant="bi bi-cart-check-fill" to="/carrito">carrito</Link>
+          <Link className="material-icons" to="/carrito">shopping_cart</Link>
           <Contador stock={5} initial={1} onAdd={onAdd} />
         </div>
       </Card.Body>

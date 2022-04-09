@@ -1,10 +1,29 @@
-.header-bg{
-    background-color: aquamarine;
+#layout-NavBar {
+    font-family: unset;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0, 5rem 1rem;
+    background: black
+  }
+.nav-Link {
+  color: white !important;
+  text-decoration: none !important;
+  border: 2px solid white;
+  border-radius: 5px;
+  width: fit-content;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  padding: 1rem !important;
+  margin: 4px !important;
+  background: transparent
 }
-.menu-Link{
-    color: black;
-    padding: 1rem;
+.nav-link {
+  color: white !important;
 }
-.menu-Link:hover {
-    color: palevioletred;  
+.nav-link:focus, .nav-link:hover {
+  color: palevioletred !important;
 }
+
+
+

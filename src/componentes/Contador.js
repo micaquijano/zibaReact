@@ -25,11 +25,9 @@ export const Contador = ({initial, stock,onAdd}) => {
 
     return (
         <div>
-            <p>Mi Contador va : {estado}</p>
-            <button onClick={handleAgregar}>confirmar cantidad seleccionada</button>
-            <button onClick={handleSumar}>sumar</button>
+            <button onClick={handleAgregar}>Agregar al carito</button>
+            <button onClick={handleSumar}>sumar : {estado}</button>
             <button onClick={handleRestar}>restar</button>
-            
         </div>
     )
 }
