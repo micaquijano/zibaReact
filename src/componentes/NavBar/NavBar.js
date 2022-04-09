@@ -43,7 +43,6 @@ export const NavBar = () => {
         <NavDropdown.Item >remeras de hombre</NavDropdown.Item>
         <NavDropdown.Item >remeras de niños</NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Item >Separated link</NavDropdown.Item>
       </NavDropdown>
     </Nav>
       </div> 
