@@ -8,21 +8,21 @@ export const productosIniciales = [
   {
     id: 1,
     nombre: "Sailor Moon",
-    precio: 1200,
+    precio: 6,
     imgUrl:
       "https://www.dhresource.com/0x0/f2/albu/g9/M00/AB/AB/rBVaWF6ZeUOACvfmAAE3pWJ3kGM967.jpg/tights-fashion-female-clothing-cartoon-cat.jpg",
   },
   {
     id: 2,
     nombre: "Rick and Morty",
-    precio: 800,
+    precio: 4,
     imgUrl:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg4o6Wwe5hkictTdCCKwVkvEDliLzXa8BMWA&usqp=CAU",
   },
   {
     id: 3,
     nombre: "Attack on Tita",
-    precio: 700,
+    precio: 3.5,
     imgUrl:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ10YEFem3v8GD2HA2GWMtjfsk-iTZIVALzOQ&usqp=CAU",
   },
