@@ -8,7 +8,7 @@ export const Item = ({ producto }) => {
   return (
     <div className="container">
       <Card className="card">
-        <Card.Img className="img" variant="top" src={producto.imgUrl} />
+        <Card.Img className="img" variant="top" src={producto.image} />
         <Card.Body>
           <Card.Title>
             <h1>

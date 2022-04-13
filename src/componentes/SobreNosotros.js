@@ -3,9 +3,7 @@ export const SobreNosotros = () => {
     <>
       <div className="SobreNosotros">
 
-      
-  <img className="d-block w-100"src="https://www.economiadigital.es/wp-content/uploads/2020/10/taller-costura-inditex-arteixo-59241.jpg"/>
-          
+        <img className="d-block w-100" src="https://www.economiadigital.es/wp-content/uploads/2020/10/taller-costura-inditex-arteixo-59241.jpg"></img>
         
         <h3 className="text-decoration">
           Nuestro compromiso es ofrecer una gran variedad de prendas con una

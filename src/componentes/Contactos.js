@@ -1,9 +1,8 @@
 
-export const contactos = () => {
-   
-	return (
-		<>
-			<div>lala</div>
-		</>
-	);
+export const Contactos = () => {
+  return (
+	  <>
+	<div>lala</div>
+	</>
+  )
 }

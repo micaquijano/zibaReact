@@ -1,4 +1,4 @@
-import { Carousel, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { Route, Routes } from "react-router-dom";
 import { Carrito } from "./Carrito";
 import { Contactos } from "./Contactos";
@@ -18,6 +18,7 @@ export const Main = () => {
           <Route exact path="/producto/:idProducto"element={<ItemDetailContainer />}/>
           <Route exact path="/carrito" element={<Carrito />} />
           <Route exact path="/SobreNosotros.js" element={<SobreNosotros/>}/>
+          <Route exact path="/Contactos.js" element={<Contactos/>}/>
         </Routes>
       </Container>
     </>

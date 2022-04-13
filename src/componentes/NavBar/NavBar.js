@@ -1,7 +1,6 @@
-import { useContext } from "react";
+
 import { Nav, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { contexto } from "../../context/cardContext";
 import { Monedas } from "../Monedas";
 import "./NavBar.css";
 
@@ -30,7 +29,7 @@ export const NavBar = () => {
           </Nav.Item>
           <Nav.Item>
             <Nav.Link className="nav-Link" href="./contactos">
-              Contactanosss
+              Contactanos
             </Nav.Link>
           </Nav.Item>
           <NavDropdown title="Productos" className="nav-Link">
