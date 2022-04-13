@@ -1,9 +1,8 @@
 import { useContext } from "react";
-import { Container, Nav, NavDropdown } from "react-bootstrap";
+import { Nav, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { contexto } from "../../context/cardContext";
 import { Monedas } from "../Monedas";
-
 import "./NavBar.css";
 
 export const NavBar = () => {
@@ -25,25 +24,20 @@ export const NavBar = () => {
 
         <Nav>
           <Nav.Item>
-            <Nav.Link className="nav-Link" href="/Tazas/1">
-              Tazas
+            <Nav.Link className="nav-Link" href="./SobreNosotros.js">
+              Sobre Nosotros
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className="nav-Link" href="/Accesorios/1">
-              Accesorios
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link className="nav-Link" href="/Contactanos/1">
-              Contactanos
+            <Nav.Link className="nav-Link" href="./contactos">
+              Contactanosss
             </Nav.Link>
           </Nav.Item>
           <NavDropdown title="Productos" className="nav-Link">
             <NavDropdown.Item>remeras de mujer</NavDropdown.Item>
             <NavDropdown.Item>remeras de hombre</NavDropdown.Item>
             <NavDropdown.Item>remeras de niños</NavDropdown.Item>
-            <NavDropdown.Divider />
+            <NavDropdown.Divider/>
           </NavDropdown>
           <Nav.Item>
             <Monedas></Monedas>

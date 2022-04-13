@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from "react";
-import bandera_argentina from "../bandera_argentina.png";
-import bandera_eeuu from "../bandera_eeuu.png";
+import bandera_argentina from "../imagenes/bandera_argentina.png";
+import bandera_eeuu from "../imagenes/bandera_eeuu.png";
 const MoneyContext = React.createContext();
 export const ARS_SYMBOL = "ARS";
 export const USD_SYMBOL = "USD";

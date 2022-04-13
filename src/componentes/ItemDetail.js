@@ -27,6 +27,6 @@ export const ItemDetail = ({ item }) => {
           <Contador stock={5} initial={1} onAdd={onAdd} />
         </div>
       </Card.Body>
-    </Card>
+    </Card> 
   );
 };

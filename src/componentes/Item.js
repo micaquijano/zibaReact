@@ -1,4 +1,4 @@
-import { Card, Button, Carousel, Container, Badge } from "react-bootstrap";
+import { Card, Button,  Badge } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { ARS_SYMBOL, useMoney } from "../context/money";
 
