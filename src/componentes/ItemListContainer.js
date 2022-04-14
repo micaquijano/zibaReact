@@ -3,30 +3,9 @@ import { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import Spinner from "react-bootstrap/Spinner";
 import { useParams } from "react-router-dom";
+import Productos from "./Productos.json"
 
-export const productosIniciales = [
-  {
-    id: 1,
-    nombre: "Minecraft",
-    precio: 6,
-    Image:
-      "../..",
-  },
-  {
-    id: 2,
-    nombre: "Nezuko",
-    precio: 4,
-    Image:
-      "../imagenes/nezuko.jpg",
-  },
-  {
-    id: 3,
-    nombre: "The Boys",
-    precio: 3.5,
-    Image:
-      "../imagenes/theBoys.jpg",
-  },
-];
+
 export const ItemListContainer = () => {
   const [loading, setLoading] = useState(true);
   const [productos, setProductos] = useState([]);
@@ -38,7 +17,8 @@ export const ItemListContainer = () => {
       toast.warning("cargando productos...");
       const pedido = new Promise((res, rej) => {
         setTimeout(() => {
-          res(productosIniciales);
+          console.log(Productos.listado)
+          res(Productos.listado); 
         }, 2000);
       });
       pedido

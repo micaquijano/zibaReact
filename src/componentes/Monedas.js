@@ -1,10 +1,9 @@
-import { useState } from "react";
-import { Badge, Form, Image } from "react-bootstrap";
+import { Badge } from "react-bootstrap";
 import Select from "react-select";
-import { USD_SYMBOL, useMoney } from "../context/money";
+import { useMoney } from "../context/money";
 
 export const Monedas = () => {
-  const { symbols, symbol, setSymbol, dolarValue } = useMoney();
+  const { symbols, setSymbol, dolarValue } = useMoney();
 
   return (
     <>

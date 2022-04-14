@@ -11,10 +11,7 @@ export const NavBar = () => {
     <>
       <div id="layout-NavBar" className="NavBar-bg">
         <Link to="./">
-          <img
-            className="imgLogo"
-            src="https://d3ugyf2ht6aenh.cloudfront.net/stores/227/495/themes/common/logo-680984998-1603467733-51b38fe7dbfe694f31ab0198426ff6471603467734-320-0.png?0"
-          ></img>
+          <img className="imgLogo" alt="#" src="https://d3ugyf2ht6aenh.cloudfront.net/stores/227/495/themes/common/logo-680984998-1603467733-51b38fe7dbfe694f31ab0198426ff6471603467734-320-0.png?0"/> 
         </Link>
         <Link to="./carrito">
           <span className="material-icons">shopping_cart</span>
@@ -23,12 +20,12 @@ export const NavBar = () => {
 
         <Nav>
           <Nav.Item>
-            <Nav.Link className="nav-Link" href="./SobreNosotros.js">
+            <Nav.Link className="nav-Link" href="./SobreNosotros">
               Sobre Nosotros
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className="nav-Link" href="./contactos">
+            <Nav.Link className="nav-Link" href="./Contactos">
               Contactanos
             </Nav.Link>
           </Nav.Item>

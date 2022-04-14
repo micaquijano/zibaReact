@@ -8,21 +8,21 @@ export const Item = ({ producto }) => {
   return (
     <div className="container">
       <Card className="card">
-        <Card.Img className="img" variant="top" src={producto.image} />
+        <Card.Img className="img" variant="top" src={producto.img} />
         <Card.Body>
           <Card.Title>
             <h1>
               {symbol === ARS_SYMBOL
-                ? producto.precio * dolarValue
-                : producto.precio}
+                ? producto.price * dolarValue
+                : producto.price}
               <Badge className="small_text" bg="info">
                 {symbol}
               </Badge>
             </h1>
           </Card.Title>
-          <Card.Text>{producto.nombre}</Card.Text>
+          <Card.Text>{producto.name}</Card.Text>
           <Button variant="outline-dark">Comprar</Button>
-          <Link className="bi bi-eye" to={`/producto/${producto.id}`}>
+          <Link className="bi bi-eye" to={`/producto/${producto.itemId}`}>
             ver
           </Link>
         </Card.Body>

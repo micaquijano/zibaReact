@@ -2,9 +2,9 @@ import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
 import { ItemDetail } from "./ItemDetail";
-import { productosIniciales } from "./ItemListContainer";
 import { toast } from "react-toastify";
 import { Spinner } from "react-bootstrap";
+import Producto from "./Productos.json"
 
 export const ItemDetailContainer = () => {
   const [item, setItem] = useState();
@@ -13,12 +13,12 @@ export const ItemDetailContainer = () => {
   useEffect(() => {
     const pedido = new Promise((res) => {
       setTimeout(() => {
-        res(productosIniciales);
+        res(Producto.listado);
       }, 2000);
     });
     pedido
       .then((resultado) => {
-        const producto = resultado.find((p) => p.id === Number(idProducto));
+        const producto = resultado.find((p) => p.itemId === Number(idProducto));
         if (producto !== undefined) setItem(producto);
       })
       .catch((error) => {
