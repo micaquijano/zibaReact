@@ -30,7 +30,7 @@ export const NavBar = () => {
             </Nav.Link>
           </Nav.Item>
           <NavDropdown title="Productos" className="nav-Link">
-            <NavDropdown.Item>remeras de mujer</NavDropdown.Item>
+            <NavDropdown.Item href="RemerasMujer">Remeras de mujer</NavDropdown.Item>
             <NavDropdown.Item>remeras de hombre</NavDropdown.Item>
             <NavDropdown.Item>remeras de niños</NavDropdown.Item>
             <NavDropdown.Divider/>

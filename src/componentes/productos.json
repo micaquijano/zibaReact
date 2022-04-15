@@ -8,7 +8,7 @@
       "description": "<h1>Descripción</h1><br><h3>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</h3></br><br><h1>MEDIDAS:</h1></br><br><h3>TALLE 2: HOMBRO A HOMBRO 23.5 / SISA:30 / LARGO:43,5</h3></br><br><h3>TALLE 4: HOMBRO A HOMBRO 26.5 / SISA:31,5 / LARGO:45,5</h3></br><br><h3>TALLE 6: HOMBRO A HOMBRO 28 / SISA:33,5 / LARGO:48,5</h3></br><br><h3>TALLE 8: HOMBRO A HOMBRO 31.5 / SISA:37 / LARGO:51</h3></br><br><h3>TALLE 10: HOMBRO A HOMBRO 32 / SISA:41 / LARGO:56</h3></br><br><h3>TALLE 12: HOMBRO A HOMBRO 36 / SISA:44 / LARGO:68</h3></br>",
       "img": "../imagenes/minecraft.jpg",
       "stock": 10,
-      "sizes": "[1,2,3,4,5,6]"
+      "sizes": "TALLES: 1,2,3,4,5,6"
     },
     {
       "itemId": 2,

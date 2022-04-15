@@ -3,7 +3,7 @@ import Rate from "rc-rate";
 import "rc-rate/assets/index.css";
 import { Link } from "react-router-dom";
 import { Contador } from "./Contador";
-import { ARS_SYMBOL, USD_SYMBOL, useMoney } from "../context/money";
+import { ARS_SYMBOL, useMoney } from "../context/money";
 
 export const ItemDetail = ({ item }) => {
   const onAdd = (cantidadSeleccionada) => {
@@ -18,7 +18,7 @@ export const ItemDetail = ({ item }) => {
       <Card.Body>
         <Card.Title>{item.name}</Card.Title>
         <Card.Text>
-        {symbol == ARS_SYMBOL? item.price * dolarValue: item.price}
+        {symbol === ARS_SYMBOL? item.price * dolarValue: item.price}
         </Card.Text>
         <Card.Text>
         {item.sizes}

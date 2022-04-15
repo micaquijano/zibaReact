@@ -1,13 +1,11 @@
-import { useContext } from "react"
-import { contexto } from "../context/cardContext"
+import React from 'react'
 
 export const Carrito = () => {
-  const {carrito, total} = useContext(contexto)
-  console.log(carrito, total)
-
   return (
-    <div>carrito</div>
+    <div>Carrito</div>
   )
 }
+
+
 
  

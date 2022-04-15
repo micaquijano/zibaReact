@@ -7,6 +7,7 @@ export const Item = ({ producto }) => {
 
   return (
     <div className="container">
+    <Link className="btn-card" to={`/producto/${producto.itemId}`}>
       <Card className="card">
         <Card.Img className="img" variant="top" src={producto.img} />
         <Card.Body>
@@ -22,11 +23,9 @@ export const Item = ({ producto }) => {
           </Card.Title>
           <Card.Text>{producto.name}</Card.Text>
           <Button variant="outline-dark">Comprar</Button>
-          <Link className="bi bi-eye" to={`/producto/${producto.itemId}`}>
-            ver
-          </Link>
         </Card.Body>
       </Card>
+      </Link>
     </div>
   );
 };

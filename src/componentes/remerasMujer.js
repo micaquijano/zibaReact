@@ -1,102 +1,24 @@
+import { Card, Col, Row } from "react-bootstrap"
 
-export const remerasMujer = () => {
+export const RemerasMujer = ({listadoMujer}) => {
   return (
       <>
-    <Card border="primary" style={{ width: '18rem' }}>
-    <Card.Header>Header</Card.Header>
-    <Card.Body>
-      <Card.Title>Primary Card Title</Card.Title>
-      <Card.Text>
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
-      </Card.Text>
-    </Card.Body>
-  </Card>
-  <br />
-
-  <Card border="secondary" style={{ width: '18rem' }}>
-    <Card.Header>Header</Card.Header>
-    <Card.Body>
-      <Card.Title>Secondary Card Title</Card.Title>
-      <Card.Text>
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
-      </Card.Text>
-    </Card.Body>
-  </Card>
-  <br />
-
-  <Card border="success" style={{ width: '18rem' }}>
-    <Card.Header>Header</Card.Header>
-    <Card.Body>
-      <Card.Title>Success Card Title</Card.Title>
-      <Card.Text>
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
-      </Card.Text>
-    </Card.Body>
-  </Card>
-  <br />
-
-  <Card border="danger" style={{ width: '18rem' }}>
-    <Card.Header>Header</Card.Header>
-    <Card.Body>
-      <Card.Title>Danger Card Title</Card.Title>
-      <Card.Text>
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
-      </Card.Text>
-    </Card.Body>
-  </Card>
-  <br />
-
-  <Card border="warning" style={{ width: '18rem' }}>
-    <Card.Header>Header</Card.Header>
-    <Card.Body>
-      <Card.Title>Warning Card Title</Card.Title>
-      <Card.Text>
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
-      </Card.Text>
-    </Card.Body>
-  </Card>
-  <br />
-
-  <Card border="info" style={{ width: '18rem' }}>
-    <Card.Header>Header</Card.Header>
-    <Card.Body>
-      <Card.Title>Info Card Title</Card.Title>
-      <Card.Text>
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
-      </Card.Text>
-    </Card.Body>
-  </Card>
-  <br />
-
-  <Card border="dark" style={{ width: '18rem' }}>
-    <Card.Header>Header</Card.Header>
-    <Card.Body>
-      <Card.Title>Dark Card Title</Card.Title>
-      <Card.Text>
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
-      </Card.Text>
-    </Card.Body>
-  </Card>
-  <br />
-
-  <Card border="light" style={{ width: '18rem' }}>
-    <Card.Header>Header</Card.Header>
-    <Card.Body>
-      <Card.Title>Light Card Title</Card.Title>
-      <Card.Text>
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
-      </Card.Text>
-    </Card.Body>
-  </Card>
-  <br />
+    <Row xs={1} md={2} className="g-4">
+  {Array.from({ length: 4 }).map((_, idx) => (
+    <Col>
+      <Card>
+        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Body>
+          <Card.Title>Card title</Card.Title>
+          <Card.Text>
+            This is a longer card with supporting text below as a natural
+            lead-in to additional content. This content is a little bit longer.
+          </Card.Text>
+        </Card.Body>
+      </Card>
+    </Col>
+  ))}
+</Row>
   </>
   )
 }

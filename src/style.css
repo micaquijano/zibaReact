@@ -91,3 +91,22 @@ main {
 .text-h1{
   padding: 2rem;
 }
+
+.formulario{
+  padding: 3rem;
+  min-height: 800px;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+#enviarInfo {
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  width: fit-content;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  padding: 5px 10px;
+  background: rgba(0, 0, 0, 0.5);
+}
