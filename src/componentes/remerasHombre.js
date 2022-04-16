@@ -1,6 +1,6 @@
 import { Card, Col, Row } from "react-bootstrap"
 
-export const remerasHombre = () => {
+export const RemerasHombre = () => {
   return (
     <><Row xs={1} md={2} className="g-4">
     {Array.from({ length: 4 }).map((_, idx) => (

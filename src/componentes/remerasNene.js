@@ -1,5 +1,7 @@
+import { Card, Col, Row } from "react-bootstrap"
 
-export const remerasNene = () => {
+export const RemerasNene = () => {
+  
   return (
     <>
     <Row xs={1} md={2} className="g-4">

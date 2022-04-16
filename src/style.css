@@ -49,6 +49,9 @@ body #root {
   text-align: center;
   position: relative;
 }
+.footer-contactos{
+  color: white;
+}
 .text-Footer {
   text-align: -webkit-left;
 }
