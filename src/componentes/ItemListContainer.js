@@ -3,8 +3,7 @@ import { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import Spinner from "react-bootstrap/Spinner";
 import { useParams } from "react-router-dom";
-import Productos from "./Productos.json"
-
+import Productos from "./Productos.json";
 
 export const ItemListContainer = () => {
   const [loading, setLoading] = useState(true);
@@ -17,8 +16,16 @@ export const ItemListContainer = () => {
       toast.warning("cargando productos...");
       const pedido = new Promise((res, rej) => {
         setTimeout(() => {
-          console.log(Productos.listado)
-          res(Productos.listado); 
+          console.log(Productos.listado);
+          if (!!idCategoria) {
+            const listadoPorCategoria = Productos.listado.filter(
+              (item) => item.categoryitemId == idCategoria
+            );
+            console.log(listadoPorCategoria, idCategoria)
+            res(listadoPorCategoria);
+          } else {
+            res(Productos.listado);
+          }
         }, 2000);
       });
       pedido

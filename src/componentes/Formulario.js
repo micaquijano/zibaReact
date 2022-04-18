@@ -25,18 +25,18 @@ export const Formulario = () => {
 
   return (
     <>
-      <section
+      <form
         action="" onSubmit={handleSubmit} className="customer p-3 formulario">
         <main id="customer">
           <h1>INGRESE SUS DATOS</h1>
-          <div class="contact-card">
+          <div className="contact-card">
             <div id="form">
-              <div class="column-1"></div>
-              <div class="column-2">
-                <label class="form-label mb-1" for="name">
+              <div className="column-1"></div>
+              <div className="column-2">
+                <label className="form-label mb-1" for="name">
                   Nombre y Apellido
                 </label>
-                <input class="form-control name"
+                <input className="form-control name"
                  type="text"
                   name="name"
                   id="name"
@@ -44,46 +44,48 @@ export const Formulario = () => {
                   onChange={handleInputNombre}
                 />
 
-                <label class="form-label mb-1" for="phone">
+                <label className="form-label mb-1" for="phone">
                   Teléfono
                 </label>
                 <input
-                  class="form-control name"
+                  className="form-control name"
                   type="phone"
                   name="phone"
                   id="phone"
                 />
 
-                <label class="form-label mb-1" for="adress">
+                <label className="form-label mb-1" for="adress">
                   Dirección
                 </label>
                 <input
-                  class="form-control"
+                  className="form-control"
                   type="adress"
                   name="adress"
                   id="adress"
                   value={inputCorreo}
                   onChange={handleInputCorreo}
                 />
-                <div class="mb-3">
-                  <label for="exampleFormControlTextarea1" class="form-label">
+                <div className="mb-3">
+                  <label for="exampleFormControlTextarea1" className="form-label">
                     Comentario
                   </label>
                   <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
+                    className="form-control"
+                    type="text"
+                    name="commentary"
+                    id="commentary"
                     rows="3"
                   ></textarea>
                 </div>
 
-                <button class="btn mt-3" id="enviarInfo">
-                  Enviar Info
+                <button type="submit" className="btn mt-3" id="enviarInfo">
+                  Enviar Info 
                 </button>
               </div>
             </div>
           </div>
         </main>
-      </section>
-    </>
+      </form>
+      </>
   );
-};
+}

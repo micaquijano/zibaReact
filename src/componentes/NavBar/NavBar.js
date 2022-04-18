@@ -13,26 +13,26 @@ export const NavBar = () => {
         <Link to="./">
           <img className="imgLogo" alt="#" src="https://d3ugyf2ht6aenh.cloudfront.net/stores/227/495/themes/common/logo-680984998-1603467733-51b38fe7dbfe694f31ab0198426ff6471603467734-320-0.png?0"/> 
         </Link>
-        <Link to="./carrito">
+        <Link to="/Carrito">
           <span className="material-icons">shopping_cart</span>
           {/* {cantidad} */}
         </Link>
 
         <Nav>
           <Nav.Item>
-            <Nav.Link className="nav-Link" href="./SobreNosotros">
+            <Nav.Link className="nav-Link" href="/SobreNosotros">
               Sobre Nosotros
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className="nav-Link" href="./Contactos">
+            <Nav.Link className="nav-Link" href="/Contactos">
               Contactanos
             </Nav.Link>
           </Nav.Item>
           <NavDropdown title="Productos" className="nav-Link">
-            <NavDropdown.Item href="RemerasMujer">Remeras de mujer</NavDropdown.Item>
-            <NavDropdown.Item href="RemerasHombre">remeras de hombre</NavDropdown.Item>
-            <NavDropdown.Item href="RemerasNene">remeras de niños</NavDropdown.Item>
+            <NavDropdown.Item href="/categoria/4">Remeras de mujer</NavDropdown.Item>
+            <NavDropdown.Item href="/categoria/3">remeras de hombre</NavDropdown.Item>
+            <NavDropdown.Item href="/categoria/2">remeras de niños</NavDropdown.Item>
             <NavDropdown.Divider/>
           </NavDropdown>
           <Nav.Item>
