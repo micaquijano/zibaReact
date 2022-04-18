@@ -66,8 +66,12 @@ main {
   margin-block: auto;
 }
 .card {
-  background-color: rgb(228, 187, 228);
+  background-color: white;
   font-family: "Courier New", Courier, monospace;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  padding-top: 30px;
+  margin: 30px;
 }
 
 .material-icons {
@@ -112,4 +116,16 @@ main {
   letter-spacing: 8px;
   padding: 5px 10px;
   background: rgba(0, 0, 0, 0.5);
+}
+a {
+  color: black;
+  text-decoration: underline;
+}
+a:hover {
+  color:palevioletred;;
+}
+.card-body {
+  display: grid;
+  padding: 4rem 2rem;
+  position: relative;
 }
