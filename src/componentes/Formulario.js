@@ -4,6 +4,7 @@ export const Formulario = () => {
   const [inputNombre, cambiarInputNombre] = useState("");
   const [inputCorreo, cambiarInputCorreo] = useState("");
 
+
   // validacion de los datos y enviar el formulario
   const handleSubmit = (e) => {
     e.preventDefault();

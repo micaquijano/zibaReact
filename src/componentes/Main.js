@@ -9,11 +9,11 @@ import { SobreNosotros } from "./SobreNosotros";
 export const Main = () => {
   return (
     <>
-      <Container>
+      <Container id="main">
         <Routes>
           <Route exact path="/" element={<ItemListContainer />} />
-          <Route exact path="/categoria/:idCategoria"element={<ItemListContainer />}/>
-          <Route exact path="/producto/:idProducto"element={<ItemDetailContainer />}/>
+          <Route exact path="/Categoria/:idCategoria"element={<ItemListContainer />}/>
+          <Route exact path="/Producto/:idProducto"element={<ItemDetailContainer />}/>
           <Route exact path="/Carrito" element={<Carrito />} />
           <Route exact path="/SobreNosotros" element={<SobreNosotros/>}/>
           <Route exact path="/Contactos" element={<Formulario/>}/>

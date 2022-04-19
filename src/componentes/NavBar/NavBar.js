@@ -1,4 +1,3 @@
-
 import { Nav, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Monedas } from "../Monedas";
@@ -17,7 +16,6 @@ export const NavBar = () => {
           <span className="material-icons">shopping_cart</span>
           {/* {cantidad} */}
         </Link>
-
         <Nav>
           <Nav.Item>
             <Nav.Link className="nav-Link" href="/SobreNosotros">
@@ -30,9 +28,9 @@ export const NavBar = () => {
             </Nav.Link>
           </Nav.Item>
           <NavDropdown title="Productos" className="nav-Link">
-            <NavDropdown.Item href="/categoria/4">Remeras de mujer</NavDropdown.Item>
-            <NavDropdown.Item href="/categoria/3">remeras de hombre</NavDropdown.Item>
-            <NavDropdown.Item href="/categoria/2">remeras de niños</NavDropdown.Item>
+            <NavDropdown.Item href="/Categoria/4">Remeras de mujer</NavDropdown.Item>
+            <NavDropdown.Item href="/Categoria/3">remeras de hombre</NavDropdown.Item>
+            <NavDropdown.Item href="/Categoria/2">remeras de niños</NavDropdown.Item>
             <NavDropdown.Divider/>
           </NavDropdown>
           <Nav.Item>
