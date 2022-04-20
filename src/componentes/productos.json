@@ -95,7 +95,8 @@
     "price": 5,
     "description": "<h3>Descripción</h3><br><p>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</p></br><br><h3>MEDIDAS:</h3></br><br><p>Talle S: ANCHO:47 / LARGO:67</p></br><br><p>Talle M: ANCHO:50 / LARGO:70</p></br><br><p>Talle L: ANCHO:53 LARGO:73</p></br><br><p>Talle XL: ANCHO:56 LARGO:76</p></br><br><p>Talle XXL: ANCHO:59 LARGO:80</p></br>",
     "img": "../imagenes/deathNoteHombre.jpg",
-    "rating": 4.2
+    "rating": 4.2,
+    "sizes": [4,5,6]
   },
   {
     "itemId": 17,
