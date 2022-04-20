@@ -2,17 +2,17 @@ import { Footer } from "./Footer";
 import { Main } from "./Main";
 import { NavBar } from "./NavBar/NavBar";
 import { BrowserRouter } from "react-router-dom";
-import { MoneyProvider } from "../context/money";
+import { MainProvider } from "../context/mainProvider";
 
 const App = () => {
   return (
-    <MoneyProvider>
+    <MainProvider>
       <BrowserRouter>
         <NavBar />
         <Main />
         <Footer />
       </BrowserRouter>
-    </MoneyProvider>
+    </MainProvider>
   );
 };
 export default App;
