@@ -71,12 +71,11 @@ main {
   grid-template-columns: 2fr 2fr;
   padding-top: 30px;
   margin: 30px;
-  height: 50vh;
 }
 #card-detail {
   grid-template-columns: none !important ;
-  width: 100% !important;
-  height: 50vh;
+  width: 90% !important;
+  height: 44vh;
 }
 
 .material-icons {

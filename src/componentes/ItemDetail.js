@@ -20,7 +20,7 @@ export const ItemDetail = ({ item }) => {
           <Card
             id="card-detail"
           >
-            <Card.Img className="img" variant="top" src={item.img} />
+            <Card.Img className="responsive" variant="top" src={item.img} />
           </Card>
         </Col>
 
