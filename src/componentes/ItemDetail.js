@@ -29,8 +29,10 @@ export const ItemDetail = ({ item }) => {
     <Container>
       <Row className="justify-content-md-center">
         <Col md="auto">
-          <Card id="card-detail">
-            <Card.Img className="img" variant="top" src={item.img} />
+          <Card
+            id="card-detail"
+          >
+            <Card.Img className="responsive" variant="top" src={item.img} />
           </Card>
         </Col>
 
