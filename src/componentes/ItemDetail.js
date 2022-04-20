@@ -14,9 +14,9 @@ import { ARS_SYMBOL, useMoney } from "../context/money";
 import { useCart } from "../context/cartContext";
 import parse from "html-react-parser";
 import { useState } from "react";
+import { Precio } from "./precio";
 
 export const ItemDetail = ({ item }) => {
-  const { dolarValue, symbol } = useMoney();
   const { agregar } = useCart();
   const [talle, setTalle] = useState(3);
   const onAdd = (cantidad) => {
@@ -30,7 +30,11 @@ export const ItemDetail = ({ item }) => {
       <Row className="justify-content-md-center">
         <Col sm={4}>
           <Card id="card-detail" className="m-0 p-0">
-            <Card.Img className="responsive detailImg" variant="top" src={item.img} />
+            <Card.Img
+              className="responsive detailImg"
+              variant="top"
+              src={item.img}
+            />
           </Card>
         </Col>
 
@@ -38,9 +42,7 @@ export const ItemDetail = ({ item }) => {
           <Card id="card-detail-info" className="m-0">
             <Card.Body>
               <Card.Title>{item.name}</Card.Title>
-              <Card.Text>
-                {symbol === ARS_SYMBOL ? item.price * dolarValue : item.price}
-              </Card.Text>
+              <Precio price={item.price}></Precio>
               <Card.Text>Talles disponibles:</Card.Text>
 
               <ButtonGroup className="mb-2">
@@ -61,7 +63,7 @@ export const ItemDetail = ({ item }) => {
                 ))}
               </ButtonGroup>
               <div>
-                <Rate count={5} value={item.rating} />
+                <Rate disabled count={5} value={item.rating} />
               </div>
               <Button variant="outline-dark">Comprar</Button>
               <div>
