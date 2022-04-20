@@ -28,16 +28,14 @@ export const ItemDetail = ({ item }) => {
   return (
     <Container>
       <Row className="justify-content-md-center">
-        <Col md="auto">
-          <Card
-            id="card-detail"
-          >
+        <Col sm={4}>
+          <Card id="card-detail" className="m-0">
             <Card.Img className="responsive" variant="top" src={item.img} />
           </Card>
         </Col>
 
-        <Col md="auto">
-          <Card>
+        <Col sm={8}>
+          <Card className="m-0">
             <Card.Body>
               <Card.Title>{item.name}</Card.Title>
               <Card.Text>
