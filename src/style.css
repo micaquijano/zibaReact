@@ -22,10 +22,6 @@ body #root {
   margin: 4px;
 }
 
-.button-count {
-  align-content: space-between;
-  margin: 1rem;
-}
 .first_button {
   margin: 1rem;
 }
@@ -64,15 +60,12 @@ body #root {
 main {
   flex-grow: 1;
 }
-.Carousel {
-  width: 100%;
-}
+
 .container {
   margin-block: auto;
 }
 .card {
   background-color: white;
-  
   text-transform: uppercase;
   display: grid;
   grid-template-columns: 2fr 2fr;
@@ -85,7 +78,7 @@ main {
 }
 
 .material-icons {
-  color: white;
+  color: black;
 }
 
 .small_text {
