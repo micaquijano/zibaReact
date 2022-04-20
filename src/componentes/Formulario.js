@@ -3,7 +3,9 @@ import React, { useState } from "react";
 export const Formulario = () => {
   const [inputNombre, cambiarInputNombre] = useState("");
   const [inputCorreo, cambiarInputCorreo] = useState("");
+  const [inputTelefono, cambiarInputTelefono] = useState("");
 
+  
 
   // validacion de los datos y enviar el formulario
   const handleSubmit = (e) => {
@@ -14,15 +16,19 @@ export const Formulario = () => {
     console.log("Formulario Enviado!");
   };
 
-  // cambiar el estado del inputNombre
+  // cambiar el estado del input...
+
   const handleInputNombre = (e) => {
     cambiarInputNombre(e.target.value);
-  };
-
-  // cambia el estado del inputCorreo 
+  }; 
   const handleInputCorreo = (e) => {
     cambiarInputCorreo(e.target.value);
   };
+  const handleInputTelefono = (e) => {
+    cambiarInputTelefono(e.target.value);
+  };
+  
+
 
   return (
     <>
@@ -34,7 +40,7 @@ export const Formulario = () => {
             <div id="form">
               <div className="column-1"></div>
               <div className="column-2">
-                <label className="form-label mb-1" for="name">
+                <label className="form-label mb-1">
                   Nombre y Apellido
                 </label>
                 <input className="form-control name"
@@ -45,7 +51,7 @@ export const Formulario = () => {
                   onChange={handleInputNombre}
                 />
 
-                <label className="form-label mb-1" for="phone">
+                <label className="form-label mb-1">
                   Teléfono
                 </label>
                 <input
@@ -53,10 +59,12 @@ export const Formulario = () => {
                   type="phone"
                   name="phone"
                   id="phone"
+                  value={inputTelefono}
+                  onChange={handleInputTelefono}
                 />
 
-                <label className="form-label mb-1" for="adress">
-                  Dirección
+                <label className="form-label mb-1">
+                  Dirección de Correo Electronico
                 </label>
                 <input
                   className="form-control"
@@ -67,7 +75,7 @@ export const Formulario = () => {
                   onChange={handleInputCorreo}
                 />
                 <div className="mb-3">
-                  <label for="exampleFormControlTextarea1" className="form-label">
+                  <label className="form-label">
                     Comentario
                   </label>
                   <textarea
@@ -75,7 +83,6 @@ export const Formulario = () => {
                     type="text"
                     name="commentary"
                     id="commentary"
-                    rows="3"
                   ></textarea>
                 </div>
 
