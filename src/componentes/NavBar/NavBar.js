@@ -34,6 +34,7 @@ export const NavBar = () => {
             </Nav.Link>
           </Nav.Item>
           <NavDropdown title="Productos" className="nav-Link">
+          <NavDropdown.Item></NavDropdown.Item>
             <NavDropdown.Item href="/Categoria/4">
               Remeras de mujer
             </NavDropdown.Item>

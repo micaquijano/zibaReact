@@ -14,9 +14,10 @@ export const ItemDetail = ({ item }) => {
   };
 
   return (
-    <Card style={{ width: "18rem" }}>
+
+    <Card id="card-detail" style={{ width: "18rem" }}>
       <Card.Img className="img" variant="top" src={item.img} />
-      <Card.Body>
+      <Card.Body >
         <Card.Title>{item.name}</Card.Title>
         <Card.Text>
           {symbol === ARS_SYMBOL ? item.price * dolarValue : item.price}

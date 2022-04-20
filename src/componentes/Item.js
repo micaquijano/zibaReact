@@ -1,4 +1,4 @@
-import { Card, Button,  Badge } from "react-bootstrap";
+import { Card, Button,  Badge, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { ARS_SYMBOL, useMoney } from "../context/money";
 
@@ -6,7 +6,7 @@ export const Item = ({ producto }) => {
   const { dolarValue, symbol } = useMoney();
 
   return (
-    <div className="container">
+    <Container>
     <Link className="btn-card" to={`/producto/${producto.itemId}`}>
       <Card className="card">
         <Card.Img className="img" variant="top" src={producto.img} />
@@ -26,6 +26,6 @@ export const Item = ({ producto }) => {
         </Card.Body>
       </Card>
       </Link>
-    </div>
+      </Container>
   );
 };

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Container } from "react-bootstrap";
 import { useCart } from "../context/cartContext";
 
 export const Contador = ({ initial, stock, onAdd }) => {
@@ -22,10 +23,12 @@ export const Contador = ({ initial, stock, onAdd }) => {
   };
 
   return (
-    <div>
-      <button onClick={handleAgregar}>Agregar al carito</button>
-      <button onClick={handleSumar}>sumar : {estado}</button>
-      <button onClick={handleRestar}>restar</button>
-    </div>
+    <Container>
+    
+      <button className="btn draw-border" onClick={handleSumar}>sumar : {estado}</button>
+      <button className="btn draw-border" onClick={handleAgregar}>Agregar al carito</button>
+      <button className="btn draw-border" onClick={handleRestar}>restar</button>
+    
+    </Container>
   );
 };
