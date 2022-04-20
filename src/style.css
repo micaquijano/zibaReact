@@ -74,8 +74,16 @@ main {
 }
 #card-detail {
   grid-template-columns: none !important ;
-  width: 90% !important;
-  height: 44vh;
+  width: 100% !important;
+  height: 500px;
+}
+#card-detail-info{
+  height: 500px;
+}
+
+.detailImg{
+  height: inherit;
+  padding: 5px;
 }
 
 .material-icons {

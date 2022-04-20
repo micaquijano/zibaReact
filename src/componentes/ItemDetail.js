@@ -29,13 +29,13 @@ export const ItemDetail = ({ item }) => {
     <Container>
       <Row className="justify-content-md-center">
         <Col sm={4}>
-          <Card id="card-detail" className="m-0">
-            <Card.Img className="responsive" variant="top" src={item.img} />
+          <Card id="card-detail" className="m-0 p-0">
+            <Card.Img className="responsive detailImg" variant="top" src={item.img} />
           </Card>
         </Col>
 
         <Col sm={8}>
-          <Card className="m-0">
+          <Card id="card-detail-info" className="m-0">
             <Card.Body>
               <Card.Title>{item.name}</Card.Title>
               <Card.Text>
@@ -44,7 +44,7 @@ export const ItemDetail = ({ item }) => {
               <Card.Text>Talles disponibles:</Card.Text>
 
               <ButtonGroup className="mb-2">
-                {item.sizes.map((size, i) => (
+                {item?.sizes?.map((size, i) => (
                   <ToggleButton
                     key={i}
                     id={`size-${i}`}
