@@ -5,11 +5,11 @@
       "name": "Minecraft",
       "categoryitemId": 2,
       "price": 6,
-      "description": "<h1>Descripción</h1><br><h3>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</h3></br><br><h1>MEDIDAS:</h1></br><br><h3>TALLE 2: HOMBRO A HOMBRO 23.5 / SISA:30 / LARGO:43,5</h3></br><br><h3>TALLE 4: HOMBRO A HOMBRO 26.5 / SISA:31,5 / LARGO:45,5</h3></br><br><h3>TALLE 6: HOMBRO A HOMBRO 28 / SISA:33,5 / LARGO:48,5</h3></br><br><h3>TALLE 8: HOMBRO A HOMBRO 31.5 / SISA:37 / LARGO:51</h3></br><br><h3>TALLE 10: HOMBRO A HOMBRO 32 / SISA:41 / LARGO:56</h3></br><br><h3>TALLE 12: HOMBRO A HOMBRO 36 / SISA:44 / LARGO:68</h3></br>",
+      "description": "<h3>Descripción</h3><br><p>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</p></br><br><h3>MEDIDAS:</h3></br><br><p>TALLE 2: HOMBRO A HOMBRO 23.5 / SISA:30 / LARGO:43,5</p></br><br><p>TALLE 4: HOMBRO A HOMBRO 26.5 / SISA:31,5 / LARGO:45,5</p></br><br><p>TALLE 6: HOMBRO A HOMBRO 28 / SISA:33,5 / LARGO:48,5</p></br><br><p>TALLE 8: HOMBRO A HOMBRO 31.5 / SISA:37 / LARGO:51</p></br><br><p>TALLE 10: HOMBRO A HOMBRO 32 / SISA:41 / LARGO:56</p></br><br><p>TALLE 12: HOMBRO A HOMBRO 36 / SISA:44 / LARGO:68</p></br>",
       "img": "../imagenes/minecraft.jpg",
       "rating": 4.1,
       "stock": 10,
-      "sizes": "[1,2,3,4,5,6]"
+      "sizes": [1,2,3,4,5,6]
     },
     
     {
@@ -17,83 +17,83 @@
       "name": "amous Us",
       "categoryitemId": 2,
       "price": 4,
-      "description": "<h1>Descripción</h1><br><h3>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</h3></br><br><h1>MEDIDAS:</h1></br><br><h3>TALLE 2: HOMBRO A HOMBRO 23.5 / SISA:30 / LARGO:43,5</h3></br><br><h3>TALLE 4: HOMBRO A HOMBRO 26.5 / SISA:31,5 / LARGO:45,5</h3></br><br><h3>TALLE 6: HOMBRO A HOMBRO 28 / SISA:33,5 / LARGO:48,5</h3></br><br><h3>TALLE 8: HOMBRO A HOMBRO 31.5 / SISA:37 / LARGO:51</h3></br><br><h3>TALLE 10: HOMBRO A HOMBRO 32 / SISA:41 / LARGO:56</h3></br><br><h3>TALLE 12: HOMBRO A HOMBRO 36 / SISA:44 / LARGO:68</h3></br>",
+      "description": "<h3>Descripción</h3><br><p>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</p></br><br><h3>MEDIDAS:</h3></br><br><p>TALLE 2: HOMBRO A HOMBRO 23.5 / SISA:30 / LARGO:43,5</p></br><br><p>TALLE 4: HOMBRO A HOMBRO 26.5 / SISA:31,5 / LARGO:45,5</p></br><br><p>TALLE 6: HOMBRO A HOMBRO 28 / SISA:33,5 / LARGO:48,5</p></br><br><p>TALLE 8: HOMBRO A HOMBRO 31.5 / SISA:37 / LARGO:51</p></br><br><p>TALLE 10: HOMBRO A HOMBRO 32 / SISA:41 / LARGO:56</p></br><br><p>TALLE 12: HOMBRO A HOMBRO 36 / SISA:44 / LARGO:68</p></br>",
       "img": "../imagenes/amousUs.jpg",
       "rating": 3.1,
       "stock": 10,
-      "sizes": "[1,2,3,4,5,6]"
+      "sizes": [1,2,3,4,5,6]
     },
     {
       "itemId": 3,
       "name": "Bart Simpson",
       "categoryitemId": 2,
       "price": 3.5,
-      "description": "<h1>Descripción</h1><br><h3>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</h3></br><br><h1>MEDIDAS:</h1></br><br><h3>TALLE 2: HOMBRO A HOMBRO 23.5 / SISA:30 / LARGO:43,5</h3></br><br><h3>TALLE 4: HOMBRO A HOMBRO 26.5 / SISA:31,5 / LARGO:45,5</h3></br><br><h3>TALLE 6: HOMBRO A HOMBRO 28 / SISA:33,5 / LARGO:48,5</h3></br><br><h3>TALLE 8: HOMBRO A HOMBRO 31.5 / SISA:37 / LARGO:51</h3></br><br><h3>TALLE 10: HOMBRO A HOMBRO 32 / SISA:41 / LARGO:56</h3></br><br><h3>TALLE 12: HOMBRO A HOMBRO 36 / SISA:44 / LARGO:68</h3></br>",
+      "description": "<h3>Descripción</h3><br><p>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</p></br><br><h3>MEDIDAS:</h3></br><br><p>TALLE 2: HOMBRO A HOMBRO 23.5 / SISA:30 / LARGO:43,5</p></br><br><p>TALLE 4: HOMBRO A HOMBRO 26.5 / SISA:31,5 / LARGO:45,5</p></br><br><p>TALLE 6: HOMBRO A HOMBRO 28 / SISA:33,5 / LARGO:48,5</p></br><br><p>TALLE 8: HOMBRO A HOMBRO 31.5 / SISA:37 / LARGO:51</p></br><br><p>TALLE 10: HOMBRO A HOMBRO 32 / SISA:41 / LARGO:56</p></br><br><p>TALLE 12: HOMBRO A HOMBRO 36 / SISA:44 / LARGO:68</p></br>",
       "img": "../imagenes/bartSimpson.jpg",
       "rating": 4.3,
       "stock": 10,
-      "sizes": "[1,2,3,4,5,6]"
+      "sizes": [1,2,3,4,5,6]
     },
     {
       "itemId": 4,
       "name": "Homero Simpson",
       "categoryitemId": 2,
       "price": 4,
-      "description": "<h1>Descripción</h1><br><h3>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</h3></br><br><h1>MEDIDAS:</h1></br><br><h3>TALLE 2: HOMBRO A HOMBRO 23.5 / SISA:30 / LARGO:43,5</h3></br><br><h3>TALLE 4: HOMBRO A HOMBRO 26.5 / SISA:31,5 / LARGO:45,5</h3></br><br><h3>TALLE 6: HOMBRO A HOMBRO 28 / SISA:33,5 / LARGO:48,5</h3></br><br><h3>TALLE 8: HOMBRO A HOMBRO 31.5 / SISA:37 / LARGO:51</h3></br><br><h3>TALLE 10: HOMBRO A HOMBRO 32 / SISA:41 / LARGO:56</h3></br><br><h3>TALLE 12: HOMBRO A HOMBRO 36 / SISA:44 / LARGO:68</h3></br>",
+      "description": "<h3>Descripción</h3><br><p>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</p></br><br><h3>MEDIDAS:</h3></br><br><p>TALLE 2: HOMBRO A HOMBRO 23.5 / SISA:30 / LARGO:43,5</p></br><br><p>TALLE 4: HOMBRO A HOMBRO 26.5 / SISA:31,5 / LARGO:45,5</p></br><br><p>TALLE 6: HOMBRO A HOMBRO 28 / SISA:33,5 / LARGO:48,5</p></br><br><p>TALLE 8: HOMBRO A HOMBRO 31.5 / SISA:37 / LARGO:51</p></br><br><p>TALLE 10: HOMBRO A HOMBRO 32 / SISA:41 / LARGO:56</p></br><br><p>TALLE 12: HOMBRO A HOMBRO 36 / SISA:44 / LARGO:68</p></br>",
       "img": "../imagenes/homero.jpg",
       "rating": 4.4,
       "stock": 10,
-      "sizes": "[1,2,3,4,5,6]"
+      "sizes": [1,2,3,4,5,6]
     },
     {
       "itemId": 5,
       "name": "Hulk",
       "categoryitemId": 2,
       "price": 3.5,
-      "description": "<h1>Descripción</h1><br><h3>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</h3></br><br><h1>MEDIDAS:</h1></br><br><h3>TALLE 2: HOMBRO A HOMBRO 23.5 / SISA:30 / LARGO:43,5</h3></br><br><h3>TALLE 4: HOMBRO A HOMBRO 26.5 / SISA:31,5 / LARGO:45,5</h3></br><br><h3>TALLE 6: HOMBRO A HOMBRO 28 / SISA:33,5 / LARGO:48,5</h3></br><br><h3>TALLE 8: HOMBRO A HOMBRO 31.5 / SISA:37 / LARGO:51</h3></br><br><h3>TALLE 10: HOMBRO A HOMBRO 32 / SISA:41 / LARGO:56</h3></br><br><h3>TALLE 12: HOMBRO A HOMBRO 36 / SISA:44 / LARGO:68</h3></br>",
+      "description": "<h3>Descripción</h3><br><p>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</p></br><br><h3>MEDIDAS:</h3></br><br><p>TALLE 2: HOMBRO A HOMBRO 23.5 / SISA:30 / LARGO:43,5</p></br><br><p>TALLE 4: HOMBRO A HOMBRO 26.5 / SISA:31,5 / LARGO:45,5</p></br><br><p>TALLE 6: HOMBRO A HOMBRO 28 / SISA:33,5 / LARGO:48,5</p></br><br><p>TALLE 8: HOMBRO A HOMBRO 31.5 / SISA:37 / LARGO:51</p></br><br><p>TALLE 10: HOMBRO A HOMBRO 32 / SISA:41 / LARGO:56</p></br><br><p>TALLE 12: HOMBRO A HOMBRO 36 / SISA:44 / LARGO:68</p></br>",
       "img": "../imagenes/hulk.jpg",
       "rating": 5.1,
       "stock": 10,
-      "sizes": "[1,2,3,4,5,6]"
+      "sizes": [1,2,3,4,5,6]
     },
     {
       "itemId": 6,
       "name": "Thor",
       "categoryitemId": 2,
       "price": 3,
-      "description": "<h1>Descripción</h1><br><h3>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</h3></br><br><h1>MEDIDAS:</h1></br><br><h3>TALLE 2: HOMBRO A HOMBRO 23.5 / SISA:30 / LARGO:43,5</h3></br><br><h3>TALLE 4: HOMBRO A HOMBRO 26.5 / SISA:31,5 / LARGO:45,5</h3></br><br><h3>TALLE 6: HOMBRO A HOMBRO 28 / SISA:33,5 / LARGO:48,5</h3></br><br><h3>TALLE 8: HOMBRO A HOMBRO 31.5 / SISA:37 / LARGO:51</h3></br><br><h3>TALLE 10: HOMBRO A HOMBRO 32 / SISA:41 / LARGO:56</h3></br><br><h3>TALLE 12: HOMBRO A HOMBRO 36 / SISA:44 / LARGO:68</h3></br>",
+      "description": "<h3>Descripción</h3><br><p>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</p></br><br><h3>MEDIDAS:</h3></br><br><p>TALLE 2: HOMBRO A HOMBRO 23.5 / SISA:30 / LARGO:43,5</p></br><br><p>TALLE 4: HOMBRO A HOMBRO 26.5 / SISA:31,5 / LARGO:45,5</p></br><br><p>TALLE 6: HOMBRO A HOMBRO 28 / SISA:33,5 / LARGO:48,5</p></br><br><p>TALLE 8: HOMBRO A HOMBRO 31.5 / SISA:37 / LARGO:51</p></br><br><p>TALLE 10: HOMBRO A HOMBRO 32 / SISA:41 / LARGO:56</p></br><br><p>TALLE 12: HOMBRO A HOMBRO 36 / SISA:44 / LARGO:68</p></br>",
       "img": "../imagenes/thor.jpg",
       "rating": 4.4,
       "stock": 10,
-      "sizes": "[1,2,3,4,5,6]"
+      "sizes": [1,2,3,4,5,6]
     },
     {
       "itemId": 7,
       "name": "SpitemIder Man vs Venom",
       "categoryitemId": 2,
       "price": 4,
-      "description": "<h1>Descripción</h1><br><h3>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</h3></br><br><h1>MEDIDAS:</h1></br><br><h3>TALLE 2: HOMBRO A HOMBRO 23.5 / SISA:30 / LARGO:43,5</h3></br><br><h3>TALLE 4: HOMBRO A HOMBRO 26.5 / SISA:31,5 / LARGO:45,5</h3></br><br><h3>TALLE 6: HOMBRO A HOMBRO 28 / SISA:33,5 / LARGO:48,5</h3></br><br><h3>TALLE 8: HOMBRO A HOMBRO 31.5 / SISA:37 / LARGO:51</h3></br><br><h3>TALLE 10: HOMBRO A HOMBRO 32 / SISA:41 / LARGO:56</h3></br><br><h3>TALLE 12: HOMBRO A HOMBRO 36 / SISA:44 / LARGO:68</h3></br>",
+      "description": "<h3>Descripción</h3><br><p>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</p></br><br><h3>MEDIDAS:</h3></br><br><p>TALLE 2: HOMBRO A HOMBRO 23.5 / SISA:30 / LARGO:43,5</p></br><br><p>TALLE 4: HOMBRO A HOMBRO 26.5 / SISA:31,5 / LARGO:45,5</p></br><br><p>TALLE 6: HOMBRO A HOMBRO 28 / SISA:33,5 / LARGO:48,5</p></br><br><p>TALLE 8: HOMBRO A HOMBRO 31.5 / SISA:37 / LARGO:51</p></br><br><p>TALLE 10: HOMBRO A HOMBRO 32 / SISA:41 / LARGO:56</p></br><br><p>TALLE 12: HOMBRO A HOMBRO 36 / SISA:44 / LARGO:68</p></br>",
       "img": "../imagenes/spiderMan.jpg",
       "rating": 4.5,
       "stock": 10,
-      "sizes": "[1,2,3,4,5,6]"
+      "sizes": [1,2,3,4,5,6]
     },
     {
       "itemId": 8,
       "name": "Mario Bros",
       "categoryitemId": 2,
       "price": 4,
-      "description": "<h1>Descripción</h1><br><h3>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</h3></br><br><h1>MEDIDAS:</h1></br><br><h3>TALLE 2: HOMBRO A HOMBRO 23.5 / SISA:30 / LARGO:43,5</h3></br><br><h3>TALLE 4: HOMBRO A HOMBRO 26.5 / SISA:31,5 / LARGO:45,5</h3></br><br><h3>TALLE 6: HOMBRO A HOMBRO 28 / SISA:33,5 / LARGO:48,5</h3></br><br><h3>TALLE 8: HOMBRO A HOMBRO 31.5 / SISA:37 / LARGO:51</h3></br><br><h3>TALLE 10: HOMBRO A HOMBRO 32 / SISA:41 / LARGO:56</h3></br><br><h3>TALLE 12: HOMBRO A HOMBRO 36 / SISA:44 / LARGO:68</h3></br>",
+      "description": "<h3>Descripción</h3><br><p>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</p></br><br><h3>MEDIDAS:</h3></br><br><p>TALLE 2: HOMBRO A HOMBRO 23.5 / SISA:30 / LARGO:43,5</p></br><br><p>TALLE 4: HOMBRO A HOMBRO 26.5 / SISA:31,5 / LARGO:45,5</p></br><br><p>TALLE 6: HOMBRO A HOMBRO 28 / SISA:33,5 / LARGO:48,5</p></br><br><p>TALLE 8: HOMBRO A HOMBRO 31.5 / SISA:37 / LARGO:51</p></br><br><p>TALLE 10: HOMBRO A HOMBRO 32 / SISA:41 / LARGO:56</p></br><br><p>TALLE 12: HOMBRO A HOMBRO 36 / SISA:44 / LARGO:68</p></br>",
       "img": "../imagenes/marioBros.jpg",
       "stock": 10,
-      "sizes": "[1,2,3,4,5,6]"
+      "sizes": [1,2,3,4,5,6]
     },
     {
     "itemId": 16,
     "name": "Death Note",
     "categoryitemId": 3,
     "price": 5,
-    "description": "<h1>Descripción</h1><br><h3>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</h3></br><br><h1>MEDIDAS:</h1></br><br><h3>Talle S: ANCHO:47 / LARGO:67</h3></br><br><h3>Talle M: ANCHO:50 / LARGO:70</h3></br><br><h3>Talle L: ANCHO:53 LARGO:73</h3></br><br><h3>Talle XL: ANCHO:56 LARGO:76</h3></br><br><h3>Talle XXL: ANCHO:59 LARGO:80</h3></br>",
+    "description": "<h3>Descripción</h3><br><p>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</p></br><br><h3>MEDIDAS:</h3></br><br><p>Talle S: ANCHO:47 / LARGO:67</p></br><br><p>Talle M: ANCHO:50 / LARGO:70</p></br><br><p>Talle L: ANCHO:53 LARGO:73</p></br><br><p>Talle XL: ANCHO:56 LARGO:76</p></br><br><p>Talle XXL: ANCHO:59 LARGO:80</p></br>",
     "img": "../imagenes/deathNoteHombre.jpg",
     "rating": 4.2
   },
@@ -102,132 +102,132 @@
     "name": "spider Man Hombre",
     "categoryitemId": 3,
     "price": 4.5,
-    "description": "<h1>Descripción</h1><br><h3>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</h3></br><br><h1>MEDIDAS:</h1></br><br><h3>Talle S: ANCHO:47 / LARGO:67</h3></br><br><h3>Talle M: ANCHO:50 / LARGO:70</h3></br><br><h3>Talle L: ANCHO:53 LARGO:73</h3></br><br><h3>Talle XL: ANCHO:56 LARGO:76</h3></br><br><h3>Talle XXL: ANCHO:59 LARGO:80</h3></br>",
+    "description": "<h3>Descripción</h3><br><p>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</p></br><br><h3>MEDIDAS:</h3></br><br><p>Talle S: ANCHO:47 / LARGO:67</p></br><br><p>Talle M: ANCHO:50 / LARGO:70</p></br><br><p>Talle L: ANCHO:53 LARGO:73</p></br><br><p>Talle XL: ANCHO:56 LARGO:76</p></br><br><p>Talle XXL: ANCHO:59 LARGO:80</p></br>",
     "img": "../imagenes/spiderManHombre.jpg",
     "rating": 5.2,
     "stock": 10,
-    "sizes": "[1,2,3,4,5,6]"
+    "sizes": [1,2,3,4,5,6]
   },
   {
     "itemId": 18,
     "name": "The Boys",
     "categoryitemId": 3,
     "price": 6,
-    "description": "<h1>Descripción</h1><br><h3>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</h3></br><br><h1>MEDIDAS:</h1></br><br><h3>Talle S: ANCHO:47 / LARGO:67</h3></br><br><h3>Talle M: ANCHO:50 / LARGO:70</h3></br><br><h3>Talle L: ANCHO:53 LARGO:73</h3></br><br><h3>Talle XL: ANCHO:56 LARGO:76</h3></br><br><h3>Talle XXL: ANCHO:59 LARGO:80</h3></br>",
+    "description": "<h3>Descripción</h3><br><p>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</p></br><br><h3>MEDIDAS:</h3></br><br><p>Talle S: ANCHO:47 / LARGO:67</p></br><br><p>Talle M: ANCHO:50 / LARGO:70</p></br><br><p>Talle L: ANCHO:53 LARGO:73</p></br><br><p>Talle XL: ANCHO:56 LARGO:76</p></br><br><p>Talle XXL: ANCHO:59 LARGO:80</p></br>",
     "img": "../imagenes/theBoys.jpg",
     "rating": 4.3,
     "stock": 10,
-    "sizes": "[1,2,3,4,5,6]"
+    "sizes": [1,2,3,4,5,6]
   },
   {
     "itemId": 19,
     "name": "El Comandante",
     "categoryitemId": 3,
     "price": 5.5,
-    "description": "<h1>Descripción</h1><br><h3>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</h3></br><br><h1>MEDIDAS:</h1></br><br><h3>Talle S: ANCHO:47 / LARGO:67</h3></br><br><h3>Talle M: ANCHO:50 / LARGO:70</h3></br><br><h3>Talle L: ANCHO:53 LARGO:73</h3></br><br><h3>Talle XL: ANCHO:56 LARGO:76</h3></br><br><h3>Talle XXL: ANCHO:59 LARGO:80</h3></br>",
+    "description": "<h3>Descripción</h3><br><p>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</p></br><br><h3>MEDIDAS:</h3></br><br><p>Talle S: ANCHO:47 / LARGO:67</p></br><br><p>Talle M: ANCHO:50 / LARGO:70</p></br><br><p>Talle L: ANCHO:53 LARGO:73</p></br><br><p>Talle XL: ANCHO:56 LARGO:76</p></br><br><p>Talle XXL: ANCHO:59 LARGO:80</p></br>",
     "img": "../imagenes/elComandante.jpg",
     "rating": 5.3,
     "stock": 10,
-    "sizes": "[1,2,3,4,5,6]"
+    "sizes": [1,2,3,4,5,6]
   },
   {
     "itemId": 20,
     "name": "Vikings",
     "categoryitemId": 3,
     "price": 4,
-    "description": "<h1>Descripción</h1><br><h3>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</h3></br><br><h1>MEDIDAS:</h1></br><br><h3>Talle S: ANCHO:47 / LARGO:67</h3></br><br><h3>Talle M: ANCHO:50 / LARGO:70</h3></br><br><h3>Talle L: ANCHO:53 LARGO:73</h3></br><br><h3>Talle XL: ANCHO:56 LARGO:76</h3></br><br><h3>Talle XXL: ANCHO:59 LARGO:80</h3></br>",
+    "description": "<h3>Descripción</h3><br><p>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</p></br><br><h3>MEDIDAS:</h3></br><br><p>Talle S: ANCHO:47 / LARGO:67</p></br><br><p>Talle M: ANCHO:50 / LARGO:70</p></br><br><p>Talle L: ANCHO:53 LARGO:73</p></br><br><p>Talle XL: ANCHO:56 LARGO:76</p></br><br><p>Talle XXL: ANCHO:59 LARGO:80</p></br>",
     "img": "../imagenes/vikings.jpg",
     "rating": 4.1,
     "stock": 10,
-    "sizes": "[1,2,3,4,5,6]"
+    "sizes": [1,2,3,4,5,6]
   },
   {
     "itemId": 21,
     "name": "Yuyutsu",
     "categoryitemId": 3,
     "price": 6,
-    "description": "<h1>Descripción</h1><br><h3>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</h3></br><br><h1>MEDIDAS:</h1></br><br><h3>Talle S: ANCHO:47 / LARGO:67</h3></br><br><h3>Talle M: ANCHO:50 / LARGO:70</h3></br><br><h3>Talle L: ANCHO:53 LARGO:73</h3></br><br><h3>Talle XL: ANCHO:56 LARGO:76</h3></br><br><h3>Talle XXL: ANCHO:59 LARGO:80</h3></br>",
+    "description": "<h3>Descripción</h3><br><p>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</p></br><br><h3>MEDIDAS:</h3></br><br><p>Talle S: ANCHO:47 / LARGO:67</p></br><br><p>Talle M: ANCHO:50 / LARGO:70</p></br><br><p>Talle L: ANCHO:53 LARGO:73</p></br><br><p>Talle XL: ANCHO:56 LARGO:76</p></br><br><p>Talle XXL: ANCHO:59 LARGO:80</p></br>",
     "img": "../imagenes/yuyutsu.jpg",
     "rating": 4.5,
     "stock": 10,
-    "sizes": "[1,2,3,4,5,6]"
+    "sizes": [1,2,3,4,5,6]
   },
   {
     "itemId": 22,
     "name": "Demon Slayer",
     "categoryitemId": 3,
     "price": 4,
-    "description": "<h1>Descripción</h1><br><h3>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</h3></br><br><h1>MEDIDAS:</h1></br><br><h3>Talle S: ANCHO:47 / LARGO:67</h3></br><br><h3>Talle M: ANCHO:50 / LARGO:70</h3></br><br><h3>Talle L: ANCHO:53 LARGO:73</h3></br><br><h3>Talle XL: ANCHO:56 LARGO:76</h3></br><br><h3>Talle XXL: ANCHO:59 LARGO:80</h3></br>",
+    "description": "<h3>Descripción</h3><br><p>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</p></br><br><h3>MEDIDAS:</h3></br><br><p>Talle S: ANCHO:47 / LARGO:67</p></br><br><p>Talle M: ANCHO:50 / LARGO:70</p></br><br><p>Talle L: ANCHO:53 LARGO:73</p></br><br><p>Talle XL: ANCHO:56 LARGO:76</p></br><br><p>Talle XXL: ANCHO:59 LARGO:80</p></br>",
     "img": "../imagenes/demonSlayer.jpg",
     "rating": 5.1,
     "stock": 10,
-    "sizes": "[1,2,3,4,5,6]"
+    "sizes": [1,2,3,4,5,6]
   },
  {
     "itemId": 9,
     "name": "Nezuko",
     "categoryitemId": 4,
     "price": 3.5,
-    "description": "<h1>Descripción</h1><br><h3>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</h3></br><br><h1>MEDIDAS:</h1></br><br><h3>Talle S: Contorno de la cintura: 67 - 72 cm/ Contorno de la cadera: 90 - 95 cm</h3></br><br><h3>Talle M: Contorno de la cintura: 73 - 78 cm/ Contorno de la cadera: 95 - 100 cm</h3></br><br><h3>Talle L: Contorno de la cintura: 79 - 85 cm/ Contorno de la cadera: 101 - 108 cm</h3></br><br><h3>Talle XL: Contorno de la cintura: 86 - 94 cm/ Contorno de la cadera: 109 - 113 cm</h3></br>",
+    "description": "<h3>Descripción</h3><br><p>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</p></br><br><h3>MEDIDAS:</h3></br><br><p>Talle S: Contorno de la cintura: 67 - 72 cm/ Contorno de la cadera: 90 - 95 cm</p></br><br><p>Talle M: Contorno de la cintura: 73 - 78 cm/ Contorno de la cadera: 95 - 100 cm</p></br><br><p>Talle L: Contorno de la cintura: 79 - 85 cm/ Contorno de la cadera: 101 - 108 cm</p></br><br><p>Talle XL: Contorno de la cintura: 86 - 94 cm/ Contorno de la cadera: 109 - 113 cm</p></br>",
     "img": "../imagenes/nezuko.jpg",
     "rating": 3.5,
     "stock": 10,
-    "sizes": "[1,2,3,4,5,6]"
+    "sizes": [1,2,3,4,5,6]
   },
   {
     "itemId": 10,
     "name": "Sailor Moon.jpg",
     "categoryitemId": 4,
     "price": 3,
-    "description": "<h1>Descripción</h1><br><h3>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</h3></br><br><h1>MEDIDAS:</h1></br><br><h3>Talle S: Contorno de la cintura: 67 - 72 cm/ Contorno de la cadera: 90 - 95 cm</h3></br><br><h3>Talle M: Contorno de la cintura: 73 - 78 cm/ Contorno de la cadera: 95 - 100 cm</h3></br><br><h3>Talle L: Contorno de la cintura: 79 - 85 cm/ Contorno de la cadera: 101 - 108 cm</h3></br><br><h3>Talle XL: Contorno de la cintura: 86 - 94 cm/ Contorno de la cadera: 109 - 113 cm</h3></br>",
+    "description": "<h3>Descripción</h3><br><p>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</p></br><br><h3>MEDIDAS:</h3></br><br><p>Talle S: Contorno de la cintura: 67 - 72 cm/ Contorno de la cadera: 90 - 95 cm</p></br><br><p>Talle M: Contorno de la cintura: 73 - 78 cm/ Contorno de la cadera: 95 - 100 cm</p></br><br><p>Talle L: Contorno de la cintura: 79 - 85 cm/ Contorno de la cadera: 101 - 108 cm</p></br><br><p>Talle XL: Contorno de la cintura: 86 - 94 cm/ Contorno de la cadera: 109 - 113 cm</p></br>",
     "img": "../imagenes/sailorMoon.jpg",
     "rating": 4.4,
     "stock": 10,
-    "sizes": "[1,2,3,4,5,6]"
+    "sizes": [1,2,3,4,5,6]
   },
   {
     "itemId": 11,
     "name": "Rick And Morty",
     "categoryitemId": 4,
     "price": 3,
-    "description": "<h1>Descripción</h1><br><h3>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</h3></br><br><h1>MEDIDAS:</h1></br><br><h3>Talle S: Contorno de la cintura: 67 - 72 cm/ Contorno de la cadera: 90 - 95 cm</h3></br><br><h3>Talle M: Contorno de la cintura: 73 - 78 cm/ Contorno de la cadera: 95 - 100 cm</h3></br><br><h3>Talle L: Contorno de la cintura: 79 - 85 cm/ Contorno de la cadera: 101 - 108 cm</h3></br><br><h3>Talle XL: Contorno de la cintura: 86 - 94 cm/ Contorno de la cadera: 109 - 113 cm</h3></br>",
+    "description": "<h3>Descripción</h3><br><p>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</p></br><br><h3>MEDIDAS:</h3></br><br><p>Talle S: Contorno de la cintura: 67 - 72 cm/ Contorno de la cadera: 90 - 95 cm</p></br><br><p>Talle M: Contorno de la cintura: 73 - 78 cm/ Contorno de la cadera: 95 - 100 cm</p></br><br><p>Talle L: Contorno de la cintura: 79 - 85 cm/ Contorno de la cadera: 101 - 108 cm</p></br><br><p>Talle XL: Contorno de la cintura: 86 - 94 cm/ Contorno de la cadera: 109 - 113 cm</p></br>",
     "img": "../imagenes/rickAndMorty.jpg",
     "rating": 4.2,
     "stock": 10,
-    "sizes": "[1,2,3,4,5,6]"
+    "sizes": [1,2,3,4,5,6]
   },
   {
     "itemId": 13,
     "name": "Dragon Ball",
     "categoryitemId": 4,
     "price": 5,
-    "description": "<h1>Descripción</h1><br><h3>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</h3></br><br><h1>MEDIDAS:</h1></br><br><h3>Talle S: Contorno de la cintura: 67 - 72 cm/ Contorno de la cadera: 90 - 95 cm</h3></br><br><h3>Talle M: Contorno de la cintura: 73 - 78 cm/ Contorno de la cadera: 95 - 100 cm</h3></br><br><h3>Talle L: Contorno de la cintura: 79 - 85 cm/ Contorno de la cadera: 101 - 108 cm</h3></br><br><h3>Talle XL: Contorno de la cintura: 86 - 94 cm/ Contorno de la cadera: 109 - 113 cm</h3></br>",
+    "description": "<h3>Descripción</h3><br><p>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</p></br><br><h3>MEDIDAS:</h3></br><br><p>Talle S: Contorno de la cintura: 67 - 72 cm/ Contorno de la cadera: 90 - 95 cm</p></br><br><p>Talle M: Contorno de la cintura: 73 - 78 cm/ Contorno de la cadera: 95 - 100 cm</p></br><br><p>Talle L: Contorno de la cintura: 79 - 85 cm/ Contorno de la cadera: 101 - 108 cm</p></br><br><p>Talle XL: Contorno de la cintura: 86 - 94 cm/ Contorno de la cadera: 109 - 113 cm</p></br>",
     "img": "../imagenes/dragonBall.jpg",
     "rating": 5.3,
     "stock": 10,
-    "sizes": "[1,2,3,4,5,6]"
+    "sizes": [1,2,3,4,5,6]
   },
   {
     "itemId": 14,
     "name": "attack On Titan",
     "categoryitemId": 4,
     "price": 3.5,
-    "description": "<h1>Descripción</h1><br><h3>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</h3></br><br><h1>MEDIDAS:</h1></br><br><h3>Talle S: Contorno de la cintura: 67 - 72 cm/ Contorno de la cadera: 90 - 95 cm</h3></br><br><h3>Talle M: Contorno de la cintura: 73 - 78 cm/ Contorno de la cadera: 95 - 100 cm</h3></br><br><h3>Talle L: Contorno de la cintura: 79 - 85 cm/ Contorno de la cadera: 101 - 108 cm</h3></br><br><h3>Talle XL: Contorno de la cintura: 86 - 94 cm/ Contorno de la cadera: 109 - 113 cm</h3></br>",
+    "description": "<h3>Descripción</h3><br><p>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</p></br><br><h3>MEDIDAS:</h3></br><br><p>Talle S: Contorno de la cintura: 67 - 72 cm/ Contorno de la cadera: 90 - 95 cm</p></br><br><p>Talle M: Contorno de la cintura: 73 - 78 cm/ Contorno de la cadera: 95 - 100 cm</p></br><br><p>Talle L: Contorno de la cintura: 79 - 85 cm/ Contorno de la cadera: 101 - 108 cm</p></br><br><p>Talle XL: Contorno de la cintura: 86 - 94 cm/ Contorno de la cadera: 109 - 113 cm</p></br>",
     "img": "../imagenes/attackOnTitan.jpg",
     "rating": 4.5,
     "stock": 10,
-    "sizes": "[1,2,3,4,5,6]"
+    "sizes": [1,2,3,4,5,6]
   },
   {
     "itemId": 15,
     "name": "Death Note",
     "categoryitemId": 4,
     "price": 4,
-    "description": "<h1>Descripción</h1><br><h3>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</h3></br><br><h1>MEDIDAS:</h1></br><br><h3>Talle S: Contorno de la cintura: 67 - 72 cm/ Contorno de la cadera: 90 - 95 cm</h3></br><br><h3>Talle M: Contorno de la cintura: 73 - 78 cm/ Contorno de la cadera: 95 - 100 cm</h3></br><br><h3>Talle L: Contorno de la cintura: 79 - 85 cm/ Contorno de la cadera: 101 - 108 cm</h3></br><br><h3>Talle XL: Contorno de la cintura: 86 - 94 cm/ Contorno de la cadera: 109 - 113 cm</h3></br>",
+    "description": "<h3>Descripción</h3><br><p>Remeras de Algodón 100% (NIÑO-MUJER-HOMBRE)</p></br><br><h3>MEDIDAS:</h3></br><br><p>Talle S: Contorno de la cintura: 67 - 72 cm/ Contorno de la cadera: 90 - 95 cm</p></br><br><p>Talle M: Contorno de la cintura: 73 - 78 cm/ Contorno de la cadera: 95 - 100 cm</p></br><br><p>Talle L: Contorno de la cintura: 79 - 85 cm/ Contorno de la cadera: 101 - 108 cm</p></br><br><p>Talle XL: Contorno de la cintura: 86 - 94 cm/ Contorno de la cadera: 109 - 113 cm</p></br>",
     "img": "../imagenes/deathNote.jpg",
     "rating": 5.5,
     "stock": 10,
-    "sizes": "[1,2,3,4,5,6]"
+    "sizes": [1,2,3,4,5,6]
     
 
   }

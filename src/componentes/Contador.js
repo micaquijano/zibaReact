@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { useCart } from "../context/cartContext";
 
 export const Contador = ({ initial, stock, onAdd }) => {
   let [estado, setEstado] = useState(initial);
