@@ -4,6 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 import Spinner from "react-bootstrap/Spinner";
 import { useParams } from "react-router-dom";
 import Productos from "./Productos.json";
+import { Carousel, Col, Container, Row } from "react-bootstrap";
 
 export const ItemListContainer = () => {
   const [loading, setLoading] = useState(true);
@@ -13,7 +14,7 @@ export const ItemListContainer = () => {
 
   useEffect(() => {
     if (loading) {
-      toast.warning("cargando productos...");
+      toast.info("Ofertas exclusivas");
       const pedido = new Promise((res, rej) => {
         setTimeout(() => {
           console.log(Productos.listado);
@@ -21,7 +22,7 @@ export const ItemListContainer = () => {
             const listadoPorCategoria = Productos.listado.filter(
               (item) => item.categoryitemId == idCategoria
             );
-            console.log(listadoPorCategoria, idCategoria)
+            console.log(listadoPorCategoria, idCategoria);
             res(listadoPorCategoria);
           } else {
             res(Productos.listado);
@@ -44,8 +45,17 @@ export const ItemListContainer = () => {
   return (
     <>
       <ToastContainer />
+      <Carousel>
+        <Carousel.Item>
+          <img className="d-block w-100" src="../imagenes/banner.jpg" />
+        </Carousel.Item>
+      </Carousel>
       {loading ? (
-        <Spinner animation="border" variant="danger" />
+        <Container>
+          <Row className="justify-content-md-center m-5">
+            <Spinner animation="border" variant="danger" />
+          </Row>
+        </Container>
       ) : (
         <ItemList productos={productos} />
       )}

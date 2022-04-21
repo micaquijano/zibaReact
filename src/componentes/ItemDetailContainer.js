@@ -3,8 +3,8 @@ import { useParams } from "react-router-dom";
 import { useState } from "react";
 import { ItemDetail } from "./ItemDetail";
 import { toast } from "react-toastify";
-import { Spinner } from "react-bootstrap";
-import Producto from "../componentes/Productos.json"
+import { Container, Row, Spinner } from "react-bootstrap";
+import Producto from "../componentes/Productos.json";
 
 export const ItemDetailContainer = () => {
   const [item, setItem] = useState();
@@ -28,6 +28,10 @@ export const ItemDetailContainer = () => {
   return !!item ? (
     <ItemDetail item={item} />
   ) : (
-    <Spinner animation="border" variant="danger" />
+    <Container>
+      <Row className="justify-content-md-center m-5">
+        <Spinner animation="border" variant="danger" />
+      </Row>
+    </Container>
   );
 };

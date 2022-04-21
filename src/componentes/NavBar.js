@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import { Nav, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { useCart } from "../../context/cartContext";
-import { Monedas } from "../Monedas";
-import "./NavBar.css";
+import { useCart } from "../context/cartContext";
+import { Monedas } from "./Monedas";
 
 export const NavBar = () => {
   const { cantidadTotalDeProductos } = useCart();
