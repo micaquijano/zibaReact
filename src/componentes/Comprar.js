@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, Container, Modal } from "react-bootstrap";
+import { Button, Container, Form, Modal } from "react-bootstrap";
 import { Precio } from "./Precio";
 
 export const Comprar = ({ items, precioFinal }) => {
@@ -9,6 +9,7 @@ export const Comprar = ({ items, precioFinal }) => {
   const [emailValidate, setEmailValidate] = useState(false);
   const [show, setShow] = useState(false);
   const [inputCorreo, cambiarInputCorreo] = useState("");
+  const [confirmBuy, setConfirmBuy] = useState(false);
   const regexEmail = new RegExp(
     "^[a-zA-Z0-9._:$!%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]$"
   );
@@ -17,19 +18,21 @@ export const Comprar = ({ items, precioFinal }) => {
     setShow(false);
     setCodigoDeCompra((Math.random() * 1000000).toFixed());
     setEmailValidate(false);
+    setConfirmBuy(false);
     cambiarInputCorreo("");
   };
   const handleShow = () => setShow(true);
 
   const handleInputCorreo = (e) => {
     cambiarInputCorreo(e.target.value);
+    validateEmail();
   };
+
   const validateEmail = () => {
-    if (regexEmail.test(inputCorreo)) {
-      setEmailValidate(true);
-    } else {
-      setEmailValidate(false);
-    }
+    setEmailValidate(inputCorreo.match(regexEmail));
+  };
+  const handleBuy = () => {
+    setConfirmBuy(emailValidate);
   };
 
   return (
@@ -48,7 +51,7 @@ export const Comprar = ({ items, precioFinal }) => {
               : "Finalizar Pedido"}
           </Modal.Title>
         </Modal.Header>
-        {emailValidate ? (
+        {confirmBuy ? (
           <Modal.Body>
             <h3>Pedido Nº #{codigoDeCompra}</h3>
             <p>
@@ -57,7 +60,7 @@ export const Comprar = ({ items, precioFinal }) => {
             </p>
             <p>
               Por cualquier consulta o inconveniente con su pedido, comunicarse
-              a {" "}
+              a{" "}
               <a href="mailto:compras@valkyryaproductos.org">
                 compras@valkyryaproductos.org
               </a>{" "}
@@ -77,18 +80,16 @@ export const Comprar = ({ items, precioFinal }) => {
               <label className="form-label mb-1">
                 Dirección de Correo Electronico
               </label>
-              <input
-                className="form-control"
+              <Form.Control
                 type="email"
-                name="email"
-                id="email"
-                required
+                placeholder="email"
+                isInvalid={!emailValidate}
                 value={inputCorreo}
                 onChange={handleInputCorreo}
               />
             </Modal.Body>
             <Modal.Footer>
-              <Button variant="secondary" type="submit" onClick={validateEmail}>
+              <Button variant="secondary" disabled={!emailValidate} type="submit" onClick={handleBuy}>
                 Confirmar
               </Button>
             </Modal.Footer>

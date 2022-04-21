@@ -3,6 +3,7 @@ import "rc-rate/assets/index.css";
 import { useCart } from "../context/cartContext";
 import { Precio } from "./Precio";
 import { ContadorSimplificado } from "./ContadorSimplificado";
+import { Link } from "react-router-dom";
 
 export const ItemCarrito = ({ item }) => {
   const { agregar, eliminar } = useCart();
@@ -30,7 +31,9 @@ export const ItemCarrito = ({ item }) => {
           />
         </Col>
         <Col>
-          <h3>{item.name}</h3>
+          <Link className="btn-card" to={`/producto/${item.itemId}`}>
+            <h3>{item.name}</h3>
+          </Link>
         </Col>
         <Col>
           <Precio price={item.price}></Precio>
