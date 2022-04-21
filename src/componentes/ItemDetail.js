@@ -1,5 +1,4 @@
 import {
-  Button,
   Card,
   Container,
   Row,
@@ -15,11 +14,14 @@ import parse from "html-react-parser";
 import { useState } from "react";
 import { Precio } from "./Precio";
 import { ToastContainer, toast } from "react-toastify";
+import { Comprar } from "./Comprar";
 
 export const ItemDetail = ({ item }) => {
   const { agregar } = useCart();
   const [talle, setTalle] = useState(3);
+  const [cantidad, setCantidad] = useState(1);
   const onAdd = (cantidad) => {
+    setCantidad(cantidad);
     agregar(cantidad, item, talle);
     toast.success(`Producto: ${item.name} agregado al carrito`);
   };
@@ -55,14 +57,16 @@ export const ItemDetail = ({ item }) => {
                 </Col>
                 <Col>
                   <Card.Text>Calificaciones del producto:</Card.Text>
-                  <Rate disabled count={5} value={item.rating} /> <span className="h1">{item.rating}</span>
+                  <Rate disabled count={5} value={item.rating} />{" "}
+                  <span className="h1">{item.rating}</span>
                 </Col>
               </Row>
               <Row className="justify-content-md-right mb-3">
                 <Col sm={{ span: 6, offset: 6 }}>
-                  <Container>
-                    <Button variant="dark" className="w-100">Comprar</Button>
-                  </Container>
+                  <Comprar
+                    items={[{ ...item, cantidad: cantidad, size: talle }]}
+                    precioFinal={item.price * cantidad}
+                  ></Comprar>
                 </Col>
               </Row>
               <Row className="fix200h">
@@ -87,7 +91,7 @@ export const ItemDetail = ({ item }) => {
                   </ButtonGroup>
                 </Col>
                 <Col>
-                  <Contador stock={item.stock} initial={1} onAdd={onAdd} />
+                  <Contador stock={item.stock} initial={1} onAdd={onAdd} onCantidad={setCantidad} />
                 </Col>
               </Row>
             </Card.Body>

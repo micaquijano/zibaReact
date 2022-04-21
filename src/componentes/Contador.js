@@ -1,9 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Container, Row } from "react-bootstrap";
 import { ContadorSimplificado } from "./ContadorSimplificado";
 
-export const Contador = ({ initial, stock, onAdd }) => {
-  let [estado, setEstado] = useState(initial);
+export const Contador = ({ initial, stock, onAdd, onCantidad }) => {
+  const [estado, setEstado] = useState(initial);
+
+  useEffect(() => {
+    onCantidad(estado);
+  }, [estado]);
 
   const handleAgregar = () => {
     onAdd(estado);

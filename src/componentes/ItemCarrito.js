@@ -16,6 +16,7 @@ export const ItemCarrito = ({ item }) => {
         <Col></Col>
         <Col>Producto</Col>
         <Col>Precio</Col>
+        <Col>Subtotal</Col>
         <Col>Talle</Col>
         <Col>Eliminar</Col>
         <Col></Col>
@@ -33,6 +34,9 @@ export const ItemCarrito = ({ item }) => {
         </Col>
         <Col>
           <Precio price={item.price}></Precio>
+        </Col>
+        <Col>
+          <Precio price={item.price * item.cantidad}></Precio>
         </Col>
         <Col>
           <h3>{item.size}</h3>

@@ -1,9 +1,11 @@
 import { ItemCarrito } from "./ItemCarrito";
 import { useCart } from "../context/cartContext";
 import { Container, Row } from "react-bootstrap";
+import { Comprar } from "./Comprar";
+import { Precio } from "./Precio";
 
 export const CarritoContainer = () => {
-  const { productosAgregados } = useCart();
+  const { productosAgregados, precioTotalDeProductos } = useCart();
 
   return (
     <>
@@ -17,6 +19,18 @@ export const CarritoContainer = () => {
                   <ItemCarrito key={item.itemId} item={item}></ItemCarrito>
                 );
               })}
+            </Row>
+            <Row className="bg-white flex-lg-row-reverse">
+              <div className="w-25 p-2">
+                <div className="p-3">
+                <span className="h3">Precio final: </span>
+                <Precio price={precioTotalDeProductos}></Precio>
+                </div>
+                <Comprar
+                  items={productosAgregados}
+                  precioFinal={precioTotalDeProductos}
+                ></Comprar>
+              </div>
             </Row>
           </Container>
         </>

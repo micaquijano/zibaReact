@@ -13,6 +13,7 @@ export const useCart = () => {
 export const CartProvider = (props) => {
   const [productosAgregados, setProductosAgregados] = useState([]);
   const [cantidadTotalDeProductos, setCantidadTotalDeProductos] = useState(0);
+  const [precioTotalDeProductos, setPrecioTotalDeProductos] = useState(0);
 
   const modificarCantidadDeProducto = (productoModificado) => {
     const indexProducto = productosAgregados.findIndex(
@@ -22,6 +23,7 @@ export const CartProvider = (props) => {
       productosAgregados.splice(indexProducto, 1, productoModificado);
       setProductosAgregados(productosAgregados);
       totalDeProductosAgregados();
+      calcPrecioTotal();
     }
   };
 
@@ -48,6 +50,7 @@ export const CartProvider = (props) => {
       });
       setProductosAgregados(productosAgregados);
       totalDeProductosAgregados();
+      calcPrecioTotal();
     }
   };
 
@@ -75,6 +78,7 @@ export const CartProvider = (props) => {
         productosAgregados.splice(indexProducto, 1);
         setProductosAgregados(productosAgregados);
         totalDeProductosAgregados();
+        calcPrecioTotal();
       }
     }
   };
@@ -87,10 +91,19 @@ export const CartProvider = (props) => {
     setCantidadTotalDeProductos(total);
   };
 
+  const calcPrecioTotal = () => {
+    const preciosDeProductosAgregados = productosAgregados.map(
+      (producto) => producto.cantidad * producto.price
+    );
+    const total = preciosDeProductosAgregados.reduce((a, b) => a + b, 0);
+    setPrecioTotalDeProductos(total);
+  };
+
   const valorDelContexto = useMemo(
     () => ({
       productosAgregados,
       cantidadTotalDeProductos,
+      precioTotalDeProductos,
       modificar: modificarCantidadDeProducto,
       agregar: agregarProductosAlCarrito,
       eliminar: eliminarProductoDelCarrito,
