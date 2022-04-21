@@ -7,11 +7,12 @@ export const Monedas = () => {
 
   return (
     <>
-      <h3>
+      <h3 className="mt-2">
         <Badge bg="info">${dolarValue}</Badge>
       </h3>
 
       <Select
+        className="mt-2"
         onChange={(m) => setSymbol(m.value)}
         options={symbols}
         defaultValue={symbols[0]}
