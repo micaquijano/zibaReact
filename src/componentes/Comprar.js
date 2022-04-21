@@ -51,7 +51,8 @@ export const Comprar = ({ items, precioFinal }) => {
           </Modal.Title>
         </Modal.Header>
         {confirmBuy ? (
-          <Modal.Body>
+          <Modal.Body >
+            <div className="info">
             <h3>Pedido Nº #{codigoDeCompra}</h3>
             <p>
               Recibira un email con las instrucciones para finalizar la compra.
@@ -72,6 +73,7 @@ export const Comprar = ({ items, precioFinal }) => {
             <p>
               Precio final: <Precio price={precioFinal}></Precio>
             </p>
+            </div>
           </Modal.Body>
         ) : (
           <>

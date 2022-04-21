@@ -14,7 +14,6 @@ export const Formulario = () => {
 
   const [send, setSend] = useState(false);
 
-  // validacion de los datos y enviar el formulario
   const handleSubmit = (e) => {
     e.preventDefault();
     setSend(true);
@@ -23,9 +22,6 @@ export const Formulario = () => {
     cambiarInputTelefono("");
     cambiarInputComentario("");
   };
-
-
-  // cambiar el estado del input...
 
   const handleInputNombre = (e) => {
     cambiarInputNombre(e.target.value);
@@ -64,8 +60,10 @@ export const Formulario = () => {
     <>
       {send ? (
         <div className="text-light">
-          <h1>Formulario enviado :)</h1>
+          <div className="text-info">
+          <h1>Formulario enviado &#128522;</h1>
           <h4>Gracias por tu comentario, te contestaremos a la brevedad</h4>
+          </div>
         </div>
       ) : (
         <form

@@ -53,7 +53,7 @@ export const ItemDetail = ({ item }) => {
               </Card.Title>
               <Row className="fix200h">
                 <Col>
-                  <Precio price={item.price}></Precio>
+                <h1 className="precio"><Precio price={item.price}></Precio></h1>
                 </Col>
                 <Col>
                   <Card.Text>Calificaciones del producto:</Card.Text>
