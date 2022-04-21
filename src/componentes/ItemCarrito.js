@@ -1,17 +1,6 @@
-import {
-  Button,
-  Card,
-  Container,
-  Row,
-  Col,
-  ButtonGroup,
-  ToggleButton,
-} from "react-bootstrap";
-import Rate from "rc-rate";
+import { Card, Container, Row, Col } from "react-bootstrap";
 import "rc-rate/assets/index.css";
-import { Contador } from "./Contador";
 import { useCart } from "../context/cartContext";
-import parse from "html-react-parser";
 import { Precio } from "./Precio";
 import { ContadorSimplificado } from "./ContadorSimplificado";
 

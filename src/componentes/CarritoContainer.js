@@ -1,14 +1,9 @@
-import React, { useEffect } from "react";
 import { ItemCarrito } from "./ItemCarrito";
 import { useCart } from "../context/cartContext";
 import { Container, Row } from "react-bootstrap";
 
 export const CarritoContainer = () => {
   const { productosAgregados } = useCart();
-
-  useEffect(() => {
-    console.log(6666, "no cambio");
-  }, productosAgregados);
 
   return (
     <>

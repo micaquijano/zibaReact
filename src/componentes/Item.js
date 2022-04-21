@@ -1,6 +1,5 @@
-import { Card, Button, Badge, Container } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { useMoney } from "../context/money";
 import { Precio } from "./Precio";
 
 export const Item = ({ producto }) => {

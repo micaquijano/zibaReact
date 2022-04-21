@@ -17,7 +17,6 @@ export function MoneyProvider(props) {
     .then((res) => res.json())
     .then((json) => {
       const response = json;
-      console.log(response);
       return !!response && response?.blue?.value_sell
         ? setDolarValue(response.blue.value_sell)
         : null;
