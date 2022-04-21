@@ -248,3 +248,6 @@ button {
 .nav-link:hover {
   color: palevioletred !important;
 }
+.max100h{
+  max-height: 100px;
+}

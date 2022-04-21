@@ -20,9 +20,8 @@ export const ItemDetail = ({ item }) => {
   const { agregar } = useCart();
   const [talle, setTalle] = useState(3);
   const onAdd = (cantidad) => {
-    agregar(cantidad, item);
+    agregar(cantidad, item, talle);
     toast.success(`Producto: ${item.name} agregado al carrito`);
-
   };
 
   const description = parse(item.description);

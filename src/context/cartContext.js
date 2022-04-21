@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useMemo, useState } from "react";
+import { createContext, useContext, useMemo, useState } from "react";
 
 const CartContext = createContext();
 
@@ -10,29 +10,29 @@ export const useCart = () => {
   return context;
 };
 
-export const CartProvider = ({ children }) => {
+export const CartProvider = (props) => {
   const [productosAgregados, setProductosAgregados] = useState([]);
   const [cantidadTotalDeProductos, setCantidadTotalDeProductos] = useState(0);
-
-  useEffect(() => {
-    totalDeProductosAgregados();
-  }, [productosAgregados]);
 
   const modificarCantidadDeProducto = (productoModificado) => {
     const indexProducto = productosAgregados.findIndex(
       (producto) => producto.itemId === productoModificado.itemId
     );
     if (indexProducto !== -1) {
-      let productosAgregadosCopy = productosAgregados;
-      productosAgregadosCopy.splice(indexProducto, 1, productoModificado);
-      setProductosAgregados(productosAgregadosCopy);
+      productosAgregados.splice(indexProducto, 1, productoModificado);
+      setProductosAgregados(productosAgregados);
+      totalDeProductosAgregados();
     }
   };
 
-  const agregarProductosAlCarrito = (nuevaCantidad, item) => {
-    const productoEncontrado = productosAgregados.find(
-      (producto) => producto.itemId === item.itemId
-    );
+  const agregarProductosAlCarrito = (nuevaCantidad, item, size = null) => {
+    const productoEncontrado = productosAgregados.find((producto) => {
+      if (size) {
+        return size === producto.size && producto.itemId === item.itemId;
+      } else {
+        return producto.itemId === item.itemId;
+      }
+    });
 
     if (productoEncontrado !== undefined) {
       const productoModificado = {
@@ -41,10 +41,41 @@ export const CartProvider = ({ children }) => {
       };
       modificarCantidadDeProducto(productoModificado);
     } else {
-      let productosAgregadosCopy = productosAgregados;
-      productosAgregadosCopy.push({ ...item, cantidad: nuevaCantidad });
-      setProductosAgregados([]);
-      setProductosAgregados(productosAgregadosCopy);
+      productosAgregados.push({
+        ...item,
+        cantidad: nuevaCantidad,
+        size: size,
+      });
+      setProductosAgregados(productosAgregados);
+      totalDeProductosAgregados();
+    }
+  };
+
+  const eliminarProductoDelCarrito = (item) => {
+    const productoEncontrado = productosAgregados.find((producto) => {
+      if (item.size) {
+        return item.size === producto.size && producto.itemId === item.itemId;
+      } else {
+        return producto.itemId === item.itemId;
+      }
+    });
+
+    if (productoEncontrado !== undefined) {
+      const indexProducto = productosAgregados.findIndex((producto) => {
+        if (productoEncontrado.size) {
+          return (
+            productoEncontrado.size === producto.size &&
+            producto.itemId === productoEncontrado.itemId
+          );
+        } else {
+          return producto.itemId === productoEncontrado.itemId;
+        }
+      });
+      if (indexProducto !== -1) {
+        productosAgregados.splice(indexProducto, 1);
+        setProductosAgregados(productosAgregados);
+        totalDeProductosAgregados();
+      }
     }
   };
 
@@ -62,13 +93,10 @@ export const CartProvider = ({ children }) => {
       cantidadTotalDeProductos,
       modificar: modificarCantidadDeProducto,
       agregar: agregarProductosAlCarrito,
+      eliminar: eliminarProductoDelCarrito,
     }),
     [productosAgregados, cantidadTotalDeProductos]
   );
 
-  return (
-    <CartContext.Provider value={valorDelContexto}>
-      {children}
-    </CartContext.Provider>
-  );
+  return <CartContext.Provider value={valorDelContexto} {...props} />;
 };
