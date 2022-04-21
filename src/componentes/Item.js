@@ -1,7 +1,7 @@
 import { Card, Button, Badge, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useMoney } from "../context/money";
-import { Precio } from "./precio";
+import { Precio } from "./Precio";
 
 export const Item = ({ producto }) => {
   return (

@@ -13,7 +13,7 @@ import { Contador } from "./Contador";
 import { useCart } from "../context/cartContext";
 import parse from "html-react-parser";
 import { useState } from "react";
-import { Precio } from "./precio";
+import { Precio } from "./Precio";
 import { ToastContainer, toast } from "react-toastify";
 
 export const ItemDetail = ({ item }) => {

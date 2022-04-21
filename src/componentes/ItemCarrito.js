@@ -12,7 +12,7 @@ import "rc-rate/assets/index.css";
 import { Contador } from "./Contador";
 import { useCart } from "../context/cartContext";
 import parse from "html-react-parser";
-import { Precio } from "./precio";
+import { Precio } from "./Precio";
 
 export const ItemCarrito = ({ item }) => {
   const { agregar } = useCart();
