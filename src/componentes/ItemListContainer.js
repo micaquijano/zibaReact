@@ -4,7 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 import Spinner from "react-bootstrap/Spinner";
 import { useParams } from "react-router-dom";
 import Productos from "./Productos.json";
-import { Carousel, Col, Container, Row } from "react-bootstrap";
+import { Carousel, Container, Row } from "react-bootstrap";
 
 export const ItemListContainer = () => {
   const [loading, setLoading] = useState(true);

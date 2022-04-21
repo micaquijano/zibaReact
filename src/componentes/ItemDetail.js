@@ -10,7 +10,6 @@ import {
 import Rate from "rc-rate";
 import "rc-rate/assets/index.css";
 import { Contador } from "./Contador";
-import { ARS_SYMBOL, useMoney } from "../context/money";
 import { useCart } from "../context/cartContext";
 import parse from "html-react-parser";
 import { useState } from "react";

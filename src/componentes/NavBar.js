@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { Nav, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useCart } from "../context/cartContext";
@@ -17,8 +16,8 @@ export const NavBar = () => {
             src="https://d3ugyf2ht6aenh.cloudfront.net/stores/227/495/themes/common/logo-680984998-1603467733-51b38fe7dbfe694f31ab0198426ff6471603467734-320-0.png?0"
           />
         </Link>
-        <Link to="/Carrito">
-          <span className="material-icons">shopping_cart</span>
+        <Link to="/Carrito" className="text-light">
+          <span className="material-icons text-light">shopping_cart</span>
           {cantidadTotalDeProductos}
         </Link>
         <Nav>

@@ -62,6 +62,9 @@ body #root {
 .fix200h{
   height: 200px;
 }
+.fix100h{
+  height: 100px;
+}
 
 main {
   flex-grow: 1;
@@ -85,6 +88,13 @@ main {
 }
 #card-detail-info {
   height: 500px;
+}
+
+.centerMessage{
+  height: 500px;
+  padding-top: 25%;
+  text-align: center;
+  padding-bottom: 25%;
 }
 
 .fixHeight {
