@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Button, Container, Form, Modal } from "react-bootstrap";
+import { regexEmail } from "../data/Regex";
 import { Precio } from "./Precio";
 
 export const Comprar = ({ items, precioFinal }) => {
@@ -10,9 +11,7 @@ export const Comprar = ({ items, precioFinal }) => {
   const [show, setShow] = useState(false);
   const [inputCorreo, cambiarInputCorreo] = useState("");
   const [confirmBuy, setConfirmBuy] = useState(false);
-  const regexEmail = new RegExp(
-    "^[a-zA-Z0-9._:$!%-]+@[a-zA-Z0-9]+\\.[a-zA-Z]{2,4}$"
-  );
+
 
   const handleClose = () => {
     setShow(false);
