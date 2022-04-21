@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Nav, NavDropdown } from "react-bootstrap";
+import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useCart } from "../../context/cartContext";
 import { Monedas } from "../Monedas";
@@ -22,33 +22,25 @@ export const NavBar = () => {
           <span className="material-icons">shopping_cart</span>
           {cantidadTotalDeProductos}
         </Link>
-        <Nav>
-          <Nav.Item>
-            <Nav.Link className="nav-Link" href="/SobreNosotros">
-              Sobre Nosotros
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link className="nav-Link" href="/Contactos">
-              Contactanos
-            </Nav.Link>
-          </Nav.Item>
-          <NavDropdown title="Productos" className="nav-Link">
-            <NavDropdown.Item href="/Categoria/4">
-              Remeras de mujer
-            </NavDropdown.Item>
-            <NavDropdown.Item href="/Categoria/3">
-              remeras de hombre
-            </NavDropdown.Item>
-            <NavDropdown.Item href="/Categoria/2">
-              remeras de niños
-            </NavDropdown.Item>
-            <NavDropdown.Divider />
-          </NavDropdown>
-          <Nav.Item>
-            <Monedas></Monedas>
-          </Nav.Item>
-        </Nav>
+
+        <Navbar collapseOnSelect expand="lg"  variant="dark">
+  <Container>
+    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <Navbar.Collapse id="basic-navbar-nav">
+      <Nav className="me-auto">
+        <Nav.Link className="nav-Link" href="/SobreNosotros"> Sobre Nosotros</Nav.Link>
+        <Nav.Link className="nav-Link" href="/Contactos">Contactanos</Nav.Link>
+        <NavDropdown title="Productos" className="nav-Link" id="basic-nav-dropdown">
+          <NavDropdown.Item href="/Categoria/4">Remeras de mujer</NavDropdown.Item>
+          <NavDropdown.Item href="/Categoria/3">remeras de hombre</NavDropdown.Item>
+          <NavDropdown.Item href="/Categoria/2">remeras de niños</NavDropdown.Item>
+          <NavDropdown.Divider />
+        </NavDropdown>
+        <Monedas></Monedas>
+      </Nav>
+    </Navbar.Collapse>
+  </Container>
+</Navbar>
       </div>
     </>
   );

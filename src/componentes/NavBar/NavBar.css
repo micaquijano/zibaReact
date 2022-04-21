@@ -18,10 +18,17 @@
   margin: 4px !important;
   background: transparent
 }
+.nav-Link {
+  height: 60px;
+}
 .dropdown{
   position: relative;
   height: 60px;
 } 
+.navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+    background-color: black;
+}
 .nav-link {
   color: white !important;
 }
