@@ -18,6 +18,10 @@
   margin: 4px !important;
   background: transparent
 }
+.dropdown{
+  position: relative;
+  height: 60px;
+} 
 .nav-link {
   color: white !important;
 }

@@ -14,7 +14,7 @@ import { ARS_SYMBOL, useMoney } from "../context/money";
 import { useCart } from "../context/cartContext";
 import parse from "html-react-parser";
 import { useState } from "react";
-import { Precio } from "./precio";
+import { Precio } from "./Precio";
 
 export const ItemDetail = ({ item }) => {
   const { agregar } = useCart();
