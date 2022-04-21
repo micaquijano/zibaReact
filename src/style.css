@@ -249,9 +249,18 @@ button {
   display: flex;
   align-items: flex-start;
 }
+.nav-link-carrito{
+  display: inline-flex;
+}
 .nav-link {
   color: white !important;
   width: 18rem;
+  text-align: center;
+  padding: initial;
+}
+.nav-link-select {
+  color: black !important;
+  max-width: 18rem;
   text-align: center;
   padding: initial;
 }
