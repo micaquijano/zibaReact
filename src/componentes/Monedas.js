@@ -12,7 +12,7 @@ export const Monedas = () => {
       </h3>
 
       <Select
-        className="mt-2"
+        className="mt-2 nav-link-select"
         onChange={(m) => setSymbol(m.value)}
         options={symbols}
         defaultValue={symbols[0]}
