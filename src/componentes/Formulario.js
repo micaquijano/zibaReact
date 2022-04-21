@@ -24,6 +24,7 @@ export const Formulario = () => {
     cambiarInputComentario("");
   };
 
+
   // cambiar el estado del input...
 
   const handleInputNombre = (e) => {

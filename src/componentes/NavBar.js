@@ -24,14 +24,14 @@ export const NavBar = () => {
         <Navbar collapseOnSelect expand="lg"  variant="dark">
   <Container>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    <Navbar.Collapse id="basic-navbar-nav">
+    <Navbar.Collapse id="basic-navbar-nav menu">
       <Nav className="me-auto">
         <Nav.Link className="nav-Link" href="/SobreNosotros"> Sobre Nosotros</Nav.Link>
         <Nav.Link className="nav-Link" href="/Contactos">Contactanos</Nav.Link>
         <NavDropdown title="Productos" className="nav-Link" id="basic-nav-dropdown">
-          <NavDropdown.Item href="/Categoria/4">Remeras de mujer</NavDropdown.Item>
-          <NavDropdown.Item href="/Categoria/3">remeras de hombre</NavDropdown.Item>
-          <NavDropdown.Item href="/Categoria/2">remeras de niños</NavDropdown.Item>
+          <NavDropdown.Item className="link" href="/Categoria/4">Remeras de mujer</NavDropdown.Item>
+          <NavDropdown.Item className="link" href="/Categoria/3">remeras de hombre</NavDropdown.Item>
+          <NavDropdown.Item className="link" href="/Categoria/2">remeras de niños</NavDropdown.Item>
           <NavDropdown.Divider />
         </NavDropdown>
         <Monedas></Monedas>
