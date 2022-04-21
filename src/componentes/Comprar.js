@@ -82,7 +82,7 @@ export const Comprar = ({ items, precioFinal }) => {
               </label>
               <Form.Control
                 type="email"
-                placeholder="email"
+                placeholder="email@example.com"
                 isInvalid={!emailValidate}
                 value={inputCorreo}
                 onChange={handleInputCorreo}
