@@ -16,6 +16,7 @@ export const Formulario = () => {
     console.log("Formulario Enviado!");
   };
 
+
   // cambiar el estado del input...
 
   const handleInputNombre = (e) => {
@@ -27,6 +28,7 @@ export const Formulario = () => {
   const handleInputTelefono = (e) => {
     cambiarInputTelefono(e.target.value);
   };
+  
   
 
 
@@ -87,7 +89,7 @@ export const Formulario = () => {
                 </div>
 
                 <button type="submit" className="btn mt-3" id="enviarInfo">
-                  Enviar Info 
+                   Enviar Info
                 </button>
               </div>
             </div>
