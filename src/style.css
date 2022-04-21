@@ -325,3 +325,8 @@ button {
   margin: 6rem;
   position: absolute;
 }
+.img-with-zoom {
+  object-fit: cover; }
+
+.img-with-zoom:hover {
+  transform: scale(1.10); }
