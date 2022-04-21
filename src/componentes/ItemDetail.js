@@ -14,18 +14,22 @@ import { useCart } from "../context/cartContext";
 import parse from "html-react-parser";
 import { useState } from "react";
 import { Precio } from "./precio";
+import { ToastContainer, toast } from "react-toastify";
 
 export const ItemDetail = ({ item }) => {
   const { agregar } = useCart();
   const [talle, setTalle] = useState(3);
   const onAdd = (cantidad) => {
     agregar(cantidad, item);
+    toast.success(`Producto: ${item.name} agregado al carrito`);
+
   };
 
   const description = parse(item.description);
 
   return (
     <Container>
+      <ToastContainer />
       <Row className="justify-content-md-center">
         <Col sm={4}>
           <Card id="card-detail" className="m-0 p-0">
