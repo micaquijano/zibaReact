@@ -2,6 +2,7 @@ import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useCart } from "../context/cartContext";
 import { Monedas } from "./Monedas";
+import { Precio } from "./Precio";
 
 export const NavBar = () => {
   const { cantidadTotalDeProductos } = useCart();
