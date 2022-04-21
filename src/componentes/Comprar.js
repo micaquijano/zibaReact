@@ -11,7 +11,7 @@ export const Comprar = ({ items, precioFinal }) => {
   const [inputCorreo, cambiarInputCorreo] = useState("");
   const [confirmBuy, setConfirmBuy] = useState(false);
   const regexEmail = new RegExp(
-    "^[a-zA-Z0-9._:$!%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]$"
+    "^[a-zA-Z0-9._:$!%-]+@[a-zA-Z0-9]+\\.[a-zA-Z]{2,4}$"
   );
 
   const handleClose = () => {
@@ -89,7 +89,12 @@ export const Comprar = ({ items, precioFinal }) => {
               />
             </Modal.Body>
             <Modal.Footer>
-              <Button variant="secondary" disabled={!emailValidate} type="submit" onClick={handleBuy}>
+              <Button
+                variant="secondary"
+                disabled={!emailValidate}
+                type="submit"
+                onClick={handleBuy}
+              >
                 Confirmar
               </Button>
             </Modal.Footer>
