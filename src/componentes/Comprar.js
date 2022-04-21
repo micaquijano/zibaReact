@@ -90,7 +90,7 @@ export const Comprar = ({ items, precioFinal }) => {
             </Modal.Body>
             <Modal.Footer>
               <Button
-                variant="secondary"
+                variant="dark"
                 disabled={!emailValidate}
                 type="submit"
                 onClick={handleBuy}
