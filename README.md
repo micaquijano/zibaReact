@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+### Proyecto: Valkyrya Productos
+Mi Proyecto fue crear un ecommerce. Mostrando todos los productos de mi emprendimiento relizandolo de manera dinamico. 
+link del proyecto: https://react-valkyryaproductos.netlify.app
+link de GitHub: https://github.com/micaquijano/zibaReact.git
+npm start
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### IMPLEMENTACION:
 
-## Available Scripts
+### Navbar:
+contiene logo, menu desplegable responsive con las categorias de los productos, carrito de compra en el cual detalla la finalizacion de la compra, permite eliminar productos del carrito y al finalizar muestra una cartel pidiendo una direccion de email para enviar el detalle de la compra realizada.
+En contactos realice un formulario con validacion de datos para que el cliente relice sus consultas.
+Realice una api mostrando cambio de moneda en el cual se aplican para todos los productos.
 
-In the project directory, you can run:
+### Main:
+contiene un slider, agregue cards para mostrar todos los productos en la cual se muestran los detalles de cada producto que contiene: 
+un contador para agregar y quitar productos.
+rating con la puntuacion del producto.
+lista de talles al clickear se guarda la informacion en el carrito.
+descripcion del producto y tabla de talles.
 
-### `npm start`
+### Footer:
+agregue un google maps mostrando la ubicacion del local y direcciones de redes sociales.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Metodos Utilizados:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## react-bootstrap
+framework de estilos para utilizar el diseño y simplificar maquetado
+## rc-rate
+componente utilizado para mostrar en forma de punta de estrellas la puntuacion promedio del producto
+## html-react-parser
+libreria que transforma texto enriquesido en html a html para simular si se cargaria esta descripcion en un gestor de contenido.
+## react-toastify
+libreria para generar notificaciones toast, utilizada en avisos informativos como al realizar la accion de agregar al carrito.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

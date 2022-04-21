@@ -12,7 +12,5 @@ export const Precio = ({ price }) => {
                 </Badge></span>
     
   </>
-               /*  <Badge className="small_text" bg="info">
-                  {Symbol}
-                </Badge> */
+              
                 
