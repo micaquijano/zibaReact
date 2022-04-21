@@ -13,6 +13,7 @@ import { Contador } from "./Contador";
 import { useCart } from "../context/cartContext";
 import parse from "html-react-parser";
 import { Precio } from "./Precio";
+import { ContadorSimplificado } from "./ContadorSimplificado";
 
 export const ItemCarrito = ({ item }) => {
   const { agregar } = useCart();
@@ -38,7 +39,7 @@ export const ItemCarrito = ({ item }) => {
             </Col>
             <Col>{item.size}</Col>
             <Col>
-              <Contador stock={item.stock} initial={item.cantidad} onAdd={onAdd} />
+              <ContadorSimplificado stock={item.stock} initial={item.cantidad} onAdd={onAdd} />
             </Col>
           </Row>
         </Container>
