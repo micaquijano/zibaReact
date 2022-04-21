@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import Spinner from "react-bootstrap/Spinner";
 import { useParams } from "react-router-dom";
-import Productos from "./Productos.json";
+import Productos from "../data/Productos.json";
 import { Carousel, Container, Row } from "react-bootstrap";
 
 export const ItemListContainer = () => {

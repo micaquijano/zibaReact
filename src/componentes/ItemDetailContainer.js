@@ -4,7 +4,7 @@ import { useState } from "react";
 import { ItemDetail } from "./ItemDetail";
 import { toast } from "react-toastify";
 import { Container, Row, Spinner } from "react-bootstrap";
-import Producto from "../componentes/Productos.json";
+import Producto from "../data/Productos.json";
 
 export const ItemDetailContainer = () => {
   const [item, setItem] = useState(null);
