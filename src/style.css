@@ -40,7 +40,7 @@ body #root {
 }
 
 #page_footer {
-  padding: 1rem;
+  padding: 1rem 0;
   background: radial-gradient(
     circle,
     rgb(40, 40, 40) 0%,
@@ -53,8 +53,17 @@ body #root {
   display: flex;
   justify-content: space-evenly;
 }
+.footer-social-link ul {
+  list-style: none;
+}
 .text-Footer {
   text-align: center;
+}
+.fix200h{
+  height: 200px;
+}
+.fix100h{
+  height: 100px;
 }
 
 main {
@@ -77,11 +86,22 @@ main {
   width: 100% !important;
   height: 500px;
 }
-#card-detail-info{
+#card-detail-info {
   height: 500px;
 }
 
-.detailImg{
+.centerMessage{
+  height: 500px;
+  padding-top: 25%;
+  text-align: center;
+  padding-bottom: 25%;
+}
+
+.fixHeight {
+  height: 250px;
+}
+
+.detailImg {
   height: inherit;
   padding: 5px;
 }
@@ -200,4 +220,31 @@ button {
 .btn-comprar {
   border: 1px solid black !important;
 }
-img {width: 100%}
+
+#layout-NavBar {
+  font-family: unset;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0, 5rem 1rem;
+  background: black;
+}
+.nav-Link {
+  color: white !important;
+  text-decoration: none !important;
+  border: 2px solid white;
+  border-radius: 5px;
+  width: fit-content;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  padding: 1rem !important;
+  margin: 4px !important;
+  background: transparent;
+}
+.nav-link {
+  color: white !important;
+}
+.nav-link:focus,
+.nav-link:hover {
+  color: palevioletred !important;
+}

@@ -3,11 +3,11 @@ import { useParams } from "react-router-dom";
 import { useState } from "react";
 import { ItemDetail } from "./ItemDetail";
 import { toast } from "react-toastify";
-import { Spinner } from "react-bootstrap";
-import Producto from "../componentes/Productos.json"
+import { Container, Row, Spinner } from "react-bootstrap";
+import Producto from "../data/Productos.json";
 
 export const ItemDetailContainer = () => {
-  const [item, setItem] = useState();
+  const [item, setItem] = useState(null);
   const { idProducto } = useParams();
 
   useEffect(() => {
@@ -19,7 +19,7 @@ export const ItemDetailContainer = () => {
     pedido
       .then((resultado) => {
         const producto = resultado.find((p) => p.itemId === Number(idProducto));
-        if (producto !== undefined) setItem(producto);
+        setItem(producto);
       })
       .catch((error) => {
         toast.error("error al cargar productos");
@@ -27,7 +27,19 @@ export const ItemDetailContainer = () => {
   }, [idProducto]);
   return !!item ? (
     <ItemDetail item={item} />
+  ) : item !== undefined ? (
+    <Container>
+      <Row className="justify-content-md-center m-5">
+        <Spinner animation="border" variant="danger" />
+      </Row>
+    </Container>
   ) : (
-    <Spinner animation="border" variant="danger" />
+    <Container>
+      <Row className="justify-content-md-center">
+        <h1 className="text-light centerMessage">
+          Ups Producto no encontrado :(
+        </h1>
+      </Row>
+    </Container>
   );
 };
