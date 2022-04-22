@@ -100,6 +100,12 @@ export const CartProvider = (props) => {
     setPrecioTotalDeProductos(total);
   };
 
+  const eliminarTodosLosProductos = () => {
+    setProductosAgregados([]);
+    setCantidadTotalDeProductos(0);
+    setPrecioTotalDeProductos(0);
+  }
+
   const valorDelContexto = useMemo(
     () => ({
       productosAgregados,
@@ -108,6 +114,7 @@ export const CartProvider = (props) => {
       modificar: modificarCantidadDeProducto,
       agregar: agregarProductosAlCarrito,
       eliminar: eliminarProductoDelCarrito,
+      eliminarTodo: eliminarTodosLosProductos,
     }),
     [productosAgregados, cantidadTotalDeProductos]
   );
