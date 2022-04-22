@@ -1,4 +1,5 @@
-import { createContext, useContext, useMemo, useState } from "react";
+import { createContext, useContext, useMemo } from "react";
+import { useLocalStorage } from "./storage";
 
 const CartContext = createContext();
 
@@ -11,9 +12,9 @@ export const useCart = () => {
 };
 
 export const CartProvider = (props) => {
-  const [productosAgregados, setProductosAgregados] = useState([]);
-  const [cantidadTotalDeProductos, setCantidadTotalDeProductos] = useState(0);
-  const [precioTotalDeProductos, setPrecioTotalDeProductos] = useState(0);
+  const [productosAgregados, setProductosAgregados] = useLocalStorage('carrito', []);
+  const [cantidadTotalDeProductos, setCantidadTotalDeProductos] = useLocalStorage('carrito_contador', 0);
+  const [precioTotalDeProductos, setPrecioTotalDeProductos] = useLocalStorage('carrito_precio', 0);
 
   const modificarCantidadDeProducto = (productoModificado) => {
     const indexProducto = productosAgregados.findIndex(
